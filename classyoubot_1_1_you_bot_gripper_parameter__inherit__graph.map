@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$classyoubot_1_1_bar_spacing_offset.html" title="Represents a bar spacing offset." alt="" coords="5,237,128,267"/>
+<area shape="rect" href="$classyoubot_1_1_calibrate_gripper.html" title="Calibrate the gripper." alt="" coords="152,237,267,267"/>
+<area shape="rect" href="$classyoubot_1_1_max_encoder_value.html" title="The encoder value when the gripper has reached it&#39;s maximum bar spacing position..." alt="" coords="291,237,416,267"/>
+<area shape="rect" href="$classyoubot_1_1_max_travel_distance.html" title="The maximum bar spacing distance of the gripper." alt="" coords="440,237,571,267"/>
+<area shape="rect" href="$classyoubot_1_1_gripper_parameter.html" title="abstract gripper parameter" alt="" coords="220,83,343,112"/>
+<area shape="rect" href="$classyoubot_1_1_parameter.html" title="abstract parameter" alt="" coords="241,5,321,35"/>
+</map>

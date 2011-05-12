@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" href="$_you_bot_joint_8hpp.html" title="youbot/YouBotJoint.hpp" alt="" coords="1264,83,1424,112"/>
+<area shape="rect" href="$_ethercat_master_8hpp.html" title="youbot/EthercatMaster.hpp" alt="" coords="2832,237,3011,267"/>
+<area shape="rect" href="$_logger_8hpp.html" title="generic/Logger.hpp" alt="" coords="2657,392,2788,421"/>
+<area shape="rect" href="$_units_8hpp.html" title="generic/Units.hpp" alt="" coords="1257,547,1380,576"/>
+<area shape="rect" href="$_time_8hpp.html" title="generic/Time.hpp" alt="" coords="1819,392,1939,421"/>
+<area shape="rect" href="$_exceptions_8hpp.html" title="generic/Exceptions.hpp" alt="" coords="3183,392,3340,421"/>
+<area shape="rect" href="$_joint_8hpp.html" title="generic&#45;joint/Joint.hpp" alt="" coords="131,315,277,344"/>
+<area shape="rect" href="$_joint_data_8hpp.html" title="generic&#45;joint/JointData.hpp" alt="" coords="5,469,181,499"/>
+<area shape="rect" href="$_you_bot_joint_storage_8hpp.html" title="youbot/YouBotJointStorage.hpp" alt="" coords="685,392,888,421"/>
+<area shape="rect" href="$_protocol_definitions_8hpp.html" title="youbot/ProtocolDefinitions.hpp" alt="" coords="963,392,1160,421"/>
+<area shape="rect" href="$_you_bot_joint_parameter_8hpp.html" title="youbot/YouBotJointParameter.hpp" alt="" coords="1139,237,1357,267"/>
+<area shape="rect" href="$_you_bot_slave_msg_8hpp.html" title="youbot/YouBotSlaveMsg.hpp" alt="" coords="2221,392,2411,421"/>
+<area shape="rect" href="$_you_bot_slave_mailbox_msg_8hpp.html" title="youbot/YouBotSlaveMailboxMsg.hpp" alt="" coords="1963,392,2197,421"/>
+<area shape="rect" href="$_you_bot_joint_parameter_password_protected_8hpp.html" title="youbot/YouBotJointParameterPasswordProtected.hpp" alt="" coords="976,160,1307,189"/>
+<area shape="rect" href="$_joint_parameter_8hpp.html" title="generic&#45;joint/JointParameter.hpp" alt="" coords="403,392,611,421"/>
+<area shape="rect" href="$_you_bot_joint_parameter_read_only_8hpp.html" title="youbot/YouBotJointParameterReadOnly.hpp" alt="" coords="1467,315,1741,344"/>
+<area shape="rect" href="$_config_file_8hpp.html" title="generic/ConfigFile.hpp" alt="" coords="2933,315,3083,344"/>
+<area shape="rect" href="$_motor_protection_8hpp.html" title="youbot/MotorProtection.hpp" alt="" coords="2424,315,2605,344"/>
+</map>
