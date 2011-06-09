@@ -105,68 +105,74 @@
 <a name="l00075"></a>00075 
 <a name="l00076"></a>00076     <span class="keyword">virtual</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#ae1a39c6eaa5a05fd44f8d81129c85267">~YouBotManipulator</a>();
 <a name="l00077"></a>00077 <span class="comment"></span>
-<a name="l00078"></a>00078 <span class="comment">    ///return a joint form the arm1</span>
-<a name="l00079"></a>00079 <span class="comment">    ///@param armJointNumber 1-5 for the arm1 joints</span>
-<a name="l00080"></a>00080 <span class="comment"></span>    <a class="code" href="classyoubot_1_1_you_bot_joint.html" title="youBot joint for the base and the manipulator.">YouBotJoint</a>&amp; <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a018dbcb5c98230307173984c3f91632b" title="return a joint form the arm1">getArmJoint</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> armJointNumber);
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082     <a class="code" href="classyoubot_1_1_you_bot_gripper.html" title="The youBot gripper with one degree of freedom.">YouBotGripper</a>&amp; <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a22626c3fbd778a65099558b090fe1362">getArmGripper</a>();
-<a name="l00083"></a>00083 <span class="comment"></span>
-<a name="l00084"></a>00084 <span class="comment">    ///commands positions or angles to all manipulator joints</span>
-<a name="l00085"></a>00085 <span class="comment">    ///all positions will be set at the same time</span>
-<a name="l00086"></a>00086 <span class="comment">    ///@param JointData the to command positions</span>
-<a name="l00087"></a>00087 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all manipulator joints all positions will be set...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointAngleSetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
-<a name="l00088"></a>00088 <span class="comment"></span>
-<a name="l00089"></a>00089 <span class="comment">    ///gets the position or angle of all manipulator joints which have been calculated from the actual encoder value</span>
-<a name="l00090"></a>00090 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00091"></a>00091 <span class="comment">    ///@param data returns the angles by reference</span>
-<a name="l00092"></a>00092 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedAngle&gt;&amp; data);
-<a name="l00093"></a>00093 <span class="comment"></span>
-<a name="l00094"></a>00094 <span class="comment">    ///commands velocities to all manipulator joints</span>
-<a name="l00095"></a>00095 <span class="comment">    ///all velocities will be set at the same time</span>
-<a name="l00096"></a>00096 <span class="comment">    ///@param JointData the to command velocities</span>
-<a name="l00097"></a>00097 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all manipulator joints all positions will be set...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointVelocitySetpoint&gt;&amp; JointData);
-<a name="l00098"></a>00098 <span class="comment"></span>
-<a name="l00099"></a>00099 <span class="comment">    ///gets the velocities of all manipulator joints which have been calculated from the actual encoder values</span>
-<a name="l00100"></a>00100 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00101"></a>00101 <span class="comment">    ///@param data returns the velocities by reference</span>
-<a name="l00102"></a>00102 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedVelocity&gt;&amp; data);
-<a name="l00103"></a>00103 <span class="comment"></span>
-<a name="l00104"></a>00104 <span class="comment">    ///gets temperatures of all manipulator motors which have been measured by a thermometer</span>
-<a name="l00105"></a>00105 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00106"></a>00106 <span class="comment">    ///@param data returns the actual temperatures by reference</span>
-<a name="l00107"></a>00107 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedTemperature&gt;&amp; data);
-<a name="l00108"></a>00108 <span class="comment"></span>
-<a name="l00109"></a>00109 <span class="comment">    ///gets the motor currents of all manipulator joints which have been measured by a hal sensor</span>
-<a name="l00110"></a>00110 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00111"></a>00111 <span class="comment">    ///@param data returns the actual motor currents by reference</span>
-<a name="l00112"></a>00112 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedCurrent&gt;&amp; data);
-<a name="l00113"></a>00113 
-<a name="l00114"></a>00114 
-<a name="l00115"></a>00115   <span class="keyword">private</span>:
-<a name="l00116"></a>00116     <span class="keywordtype">bool</span> areSame(<span class="keyword">const</span> <span class="keywordtype">double</span> A, <span class="keyword">const</span> <span class="keywordtype">double</span> B);
-<a name="l00117"></a>00117 
-<a name="l00118"></a>00118     <span class="keywordtype">void</span> initializeJoints();
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120     <span class="keywordtype">void</span> doJointCommutation();
+<a name="l00078"></a>00078 <span class="comment">    ///does the sine commutation of the arm joints</span>
+<a name="l00079"></a>00079 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a295f064ccd87b1ba4cb6e738c4d43acf" title="does the sine commutation of the arm joints">doJointCommutation</a>();
+<a name="l00080"></a>00080 <span class="comment"></span>
+<a name="l00081"></a>00081 <span class="comment">    ///calibrate the reference position of the arm joints</span>
+<a name="l00082"></a>00082 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#af66d97c3a96faae146593c36d5201e3b" title="calibrate the reference position of the arm joints">calibrateManipulator</a>();
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#af16b9201f068469b88d96640f17ea683">calibrateGripper</a>();
+<a name="l00085"></a>00085 <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    ///return a joint form the arm1</span>
+<a name="l00087"></a>00087 <span class="comment">    ///@param armJointNumber 1-5 for the arm1 joints</span>
+<a name="l00088"></a>00088 <span class="comment"></span>    <a class="code" href="classyoubot_1_1_you_bot_joint.html" title="youBot joint for the base and the manipulator.">YouBotJoint</a>&amp; <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a018dbcb5c98230307173984c3f91632b" title="return a joint form the arm1">getArmJoint</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> armJointNumber);
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090     <a class="code" href="classyoubot_1_1_you_bot_gripper.html" title="The youBot gripper with one degree of freedom.">YouBotGripper</a>&amp; <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a22626c3fbd778a65099558b090fe1362">getArmGripper</a>();
+<a name="l00091"></a>00091 <span class="comment"></span>
+<a name="l00092"></a>00092 <span class="comment">    ///commands positions or angles to all manipulator joints</span>
+<a name="l00093"></a>00093 <span class="comment">    ///all positions will be set at the same time</span>
+<a name="l00094"></a>00094 <span class="comment">    ///@param JointData the to command positions</span>
+<a name="l00095"></a>00095 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all manipulator joints all positions will be set...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointAngleSetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
+<a name="l00096"></a>00096 <span class="comment"></span>
+<a name="l00097"></a>00097 <span class="comment">    ///gets the position or angle of all manipulator joints which have been calculated from the actual encoder value</span>
+<a name="l00098"></a>00098 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00099"></a>00099 <span class="comment">    ///@param data returns the angles by reference</span>
+<a name="l00100"></a>00100 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedAngle&gt;&amp; data);
+<a name="l00101"></a>00101 <span class="comment"></span>
+<a name="l00102"></a>00102 <span class="comment">    ///commands velocities to all manipulator joints</span>
+<a name="l00103"></a>00103 <span class="comment">    ///all velocities will be set at the same time</span>
+<a name="l00104"></a>00104 <span class="comment">    ///@param JointData the to command velocities</span>
+<a name="l00105"></a>00105 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all manipulator joints all positions will be set...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointVelocitySetpoint&gt;&amp; JointData);
+<a name="l00106"></a>00106 <span class="comment"></span>
+<a name="l00107"></a>00107 <span class="comment">    ///gets the velocities of all manipulator joints which have been calculated from the actual encoder values</span>
+<a name="l00108"></a>00108 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00109"></a>00109 <span class="comment">    ///@param data returns the velocities by reference</span>
+<a name="l00110"></a>00110 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedVelocity&gt;&amp; data);
+<a name="l00111"></a>00111 <span class="comment"></span>
+<a name="l00112"></a>00112 <span class="comment">    ///gets temperatures of all manipulator motors which have been measured by a thermometer</span>
+<a name="l00113"></a>00113 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00114"></a>00114 <span class="comment">    ///@param data returns the actual temperatures by reference</span>
+<a name="l00115"></a>00115 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedTemperature&gt;&amp; data);
+<a name="l00116"></a>00116 <span class="comment"></span>
+<a name="l00117"></a>00117 <span class="comment">    ///gets the motor currents of all manipulator joints which have been measured by a hal sensor</span>
+<a name="l00118"></a>00118 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00119"></a>00119 <span class="comment">    ///@param data returns the actual motor currents by reference</span>
+<a name="l00120"></a>00120 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_manipulator.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all manipulator joints which have been calculated from...">getJointData</a>(std::vector&lt;JointSensedCurrent&gt;&amp; data);
 <a name="l00121"></a>00121 
-<a name="l00122"></a>00122     <a class="code" href="classyoubot_1_1_config_file.html">ConfigFile</a>* configfile;
-<a name="l00123"></a>00123 
-<a name="l00124"></a>00124     std::vector&lt;YouBotJoint&gt; joints;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123   <span class="keyword">private</span>:
+<a name="l00124"></a>00124     <span class="keywordtype">bool</span> areSame(<span class="keyword">const</span> <span class="keywordtype">double</span> A, <span class="keyword">const</span> <span class="keywordtype">double</span> B);
 <a name="l00125"></a>00125 
-<a name="l00126"></a>00126     std::vector&lt;YouBotGripper&gt; gripperVector;
+<a name="l00126"></a>00126     <span class="keywordtype">void</span> initializeJoints();
 <a name="l00127"></a>00127 
-<a name="l00128"></a>00128     std::string configFilePath;
+<a name="l00128"></a>00128     <a class="code" href="classyoubot_1_1_config_file.html">ConfigFile</a>* configfile;
 <a name="l00129"></a>00129 
-<a name="l00130"></a>00130     std::string ethercatConfigFileName;
+<a name="l00130"></a>00130     std::vector&lt;YouBotJoint&gt; joints;
 <a name="l00131"></a>00131 
-<a name="l00132"></a>00132     <span class="keywordtype">int</span> controllerType;
+<a name="l00132"></a>00132     std::vector&lt;YouBotGripper&gt; gripperVector;
 <a name="l00133"></a>00133 
-<a name="l00134"></a>00134     <span class="keywordtype">double</span> minFirmwareVersion;
+<a name="l00134"></a>00134     std::string configFilePath;
 <a name="l00135"></a>00135 
-<a name="l00136"></a>00136 };
+<a name="l00136"></a>00136     std::string ethercatConfigFileName;
 <a name="l00137"></a>00137 
-<a name="l00138"></a>00138 } <span class="comment">// namespace youbot</span>
-<a name="l00139"></a>00139 <span class="preprocessor">#endif</span>
+<a name="l00138"></a>00138     <span class="keywordtype">int</span> controllerType;
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140     <span class="keywordtype">double</span> minFirmwareVersion;
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 };
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144 } <span class="comment">// namespace youbot</span>
+<a name="l00145"></a>00145 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <hr class="footer"/><address style="text-align: right;"><small>Generated by&nbsp;
 <a href="http://www.doxygen.org/index.html">

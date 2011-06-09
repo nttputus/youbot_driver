@@ -35,8 +35,18 @@ Example how to use:</a></h2>
 
 <span class="keywordtype">int</span> <a class="code" href="_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
   <span class="keywordflow">try</span> {
-    YouBotManipulator myYouBotManipulator(<span class="stringliteral">&quot;youbot-manipulator&quot;</span>);
     YouBotBase myYouBotBase(<span class="stringliteral">&quot;youbot-base&quot;</span>);
+
+    <span class="comment">// do the sine commutation of the base joints</span>
+    myYouBotBase.doJointCommutation();
+
+    YouBotManipulator myYouBotManipulator(<span class="stringliteral">&quot;youbot-manipulator&quot;</span>);
+
+    <span class="comment">// do the sine commutation of the arm joints</span>
+    myYouBotManipulator.doJointCommutation();
+
+    <span class="comment">// calibrate the reference position of the arm joints</span>
+    myYouBotManipulator.calibrateManipulator();
 
     <span class="comment">//command base joint 1 a velocity of 2 radian per second</span>
     JointVelocitySetpoint setVel;

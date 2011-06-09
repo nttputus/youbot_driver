@@ -1,6 +1,7 @@
 <map id="G" name="G">
+<area shape="rect" href="$classyoubot_1_1_gripper_firmware_version.html" title="the firmware version of the joint" alt="" coords="16,160,176,189"/>
 <area shape="rect" href="$classyoubot_1_1_you_bot_gripper_parameter.html" title="abstract youBot gripper parameter" alt="" coords="200,160,363,189"/>
-<area shape="rect" href="$classyoubot_1_1_parameter.html" title="abstract parameter" alt="" coords="241,5,321,35"/>
+<area shape="rect" href="$classyoubot_1_1_parameter.html" title="abstract parameter" alt="" coords="148,5,228,35"/>
 <area shape="rect" href="$classyoubot_1_1_bar_spacing_offset.html" title="Represents a bar spacing offset." alt="" coords="5,237,128,267"/>
 <area shape="rect" href="$classyoubot_1_1_calibrate_gripper.html" title="Calibrate the gripper." alt="" coords="152,237,267,267"/>
 <area shape="rect" href="$classyoubot_1_1_max_encoder_value.html" title="The encoder value when the gripper has reached it&#39;s maximum bar spacing position..." alt="" coords="291,237,416,267"/>

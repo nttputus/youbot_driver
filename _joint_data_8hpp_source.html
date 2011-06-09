@@ -104,85 +104,109 @@
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075 };<span class="comment"></span>
 <a name="l00076"></a>00076 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00077"></a>00077 <span class="comment">/// Sensed velocity of the joint</span>
+<a name="l00077"></a>00077 <span class="comment">/// Sensed encoder ticks of the joint</span>
 <a name="l00078"></a>00078 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00079"></a><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html">00079</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html" title="Sensed velocity of the joint.">JointSensedVelocity</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00079"></a><a class="code" href="classyoubot_1_1_joint_sensed_encoder_ticks.html">00079</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_encoder_ticks.html" title="Sensed encoder ticks of the joint.">JointSensedEncoderTicks</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
 <a name="l00080"></a>00080   <span class="keyword">public</span>:
-<a name="l00081"></a><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">00081</a>     quantity&lt;si::angular_velocity&gt; <a class="code" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">angularVelocity</a>;
+<a name="l00081"></a><a class="code" href="classyoubot_1_1_joint_sensed_encoder_ticks.html#ac07011b7b49a920db4fe889edb8b368f">00081</a>     <span class="keywordtype">signed</span> <span class="keywordtype">int</span> <a class="code" href="classyoubot_1_1_joint_sensed_encoder_ticks.html#ac07011b7b49a920db4fe889edb8b368f">encoderTicks</a>;
 <a name="l00082"></a>00082 
 <a name="l00083"></a>00083 };<span class="comment"></span>
 <a name="l00084"></a>00084 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00085"></a>00085 <span class="comment">/// Sensed electric current of the joint</span>
+<a name="l00085"></a>00085 <span class="comment">/// Sensed velocity of the joint</span>
 <a name="l00086"></a>00086 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00087"></a><a class="code" href="classyoubot_1_1_joint_sensed_current.html">00087</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_current.html" title="Sensed electric current of the joint.">JointSensedCurrent</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00087"></a><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html">00087</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html" title="Sensed velocity of the joint.">JointSensedVelocity</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
 <a name="l00088"></a>00088   <span class="keyword">public</span>:
-<a name="l00089"></a><a class="code" href="classyoubot_1_1_joint_sensed_current.html#a1545cb88cc5c6e94d687b301f0f5b284">00089</a>     quantity&lt;si::current&gt; <a class="code" href="classyoubot_1_1_joint_sensed_current.html#a1545cb88cc5c6e94d687b301f0f5b284">current</a>;
+<a name="l00089"></a><a class="code" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">00089</a>     quantity&lt;si::angular_velocity&gt; <a class="code" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">angularVelocity</a>;
 <a name="l00090"></a>00090 
 <a name="l00091"></a>00091 };<span class="comment"></span>
 <a name="l00092"></a>00092 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00093"></a>00093 <span class="comment">/// Sensed torque of the joint</span>
+<a name="l00093"></a>00093 <span class="comment">/// Sensed rounds per minute (rpm) of the joint</span>
 <a name="l00094"></a>00094 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00095"></a><a class="code" href="classyoubot_1_1_joint_sensed_torque.html">00095</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_torque.html" title="Sensed torque of the joint.">JointSensedTorque</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00095"></a><a class="code" href="classyoubot_1_1_joint_sensed_rounds_per_minute.html">00095</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_rounds_per_minute.html" title="Sensed rounds per minute (rpm) of the joint.">JointSensedRoundsPerMinute</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
 <a name="l00096"></a>00096   <span class="keyword">public</span>:
-<a name="l00097"></a><a class="code" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">00097</a>     quantity&lt;si::torque&gt; <a class="code" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">torque</a>;
+<a name="l00097"></a><a class="code" href="classyoubot_1_1_joint_sensed_rounds_per_minute.html#a5d7afecfc9d91f67b0ad7c56202006f6">00097</a>     <span class="keywordtype">int</span> <a class="code" href="classyoubot_1_1_joint_sensed_rounds_per_minute.html#a5d7afecfc9d91f67b0ad7c56202006f6">rpm</a>;
 <a name="l00098"></a>00098 
 <a name="l00099"></a>00099 };<span class="comment"></span>
 <a name="l00100"></a>00100 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00101"></a>00101 <span class="comment">/// sensed Temperature of the joint</span>
+<a name="l00101"></a>00101 <span class="comment">/// Sensed electric current of the joint</span>
 <a name="l00102"></a>00102 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00103"></a><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html">00103</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html" title="sensed Temperature of the joint">JointSensedTemperature</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00103"></a><a class="code" href="classyoubot_1_1_joint_sensed_current.html">00103</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_current.html" title="Sensed electric current of the joint.">JointSensedCurrent</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
 <a name="l00104"></a>00104   <span class="keyword">public</span>:
-<a name="l00105"></a><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html#a3a8c4914ec180c977efaa98026bdb6a6">00105</a>     quantity&lt;celsius::temperature&gt; <a class="code" href="classyoubot_1_1_joint_sensed_temperature.html#a3a8c4914ec180c977efaa98026bdb6a6">temperature</a>;
+<a name="l00105"></a><a class="code" href="classyoubot_1_1_joint_sensed_current.html#a1545cb88cc5c6e94d687b301f0f5b284">00105</a>     quantity&lt;si::current&gt; <a class="code" href="classyoubot_1_1_joint_sensed_current.html#a1545cb88cc5c6e94d687b301f0f5b284">current</a>;
 <a name="l00106"></a>00106 
 <a name="l00107"></a>00107 };<span class="comment"></span>
 <a name="l00108"></a>00108 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00109"></a>00109 <span class="comment">/// abstract data class for commanded joint data</span>
+<a name="l00109"></a>00109 <span class="comment">/// Sensed torque of the joint</span>
 <a name="l00110"></a>00110 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00111"></a><a class="code" href="classyoubot_1_1_joint_data_setpoint.html">00111</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a> {
-<a name="l00112"></a>00112 };<span class="comment"></span>
-<a name="l00113"></a>00113 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00114"></a>00114 <span class="comment">/// Set-point angle / position of the joint</span>
-<a name="l00115"></a>00115 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00116"></a><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html">00116</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html" title="Set-point angle / position of the joint.">JointAngleSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
-<a name="l00117"></a>00117   <span class="keyword">public</span>:
-<a name="l00118"></a><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html#a04fcdd16ee9354653ef72ef22a52678c">00118</a>     quantity&lt;plane_angle&gt; <a class="code" href="classyoubot_1_1_joint_angle_setpoint.html#a04fcdd16ee9354653ef72ef22a52678c">angle</a>;
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120 };<span class="comment"></span>
-<a name="l00121"></a>00121 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00122"></a>00122 <span class="comment">/// Set-point velocity of the joint</span>
-<a name="l00123"></a>00123 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00124"></a><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html">00124</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html" title="Set-point velocity of the joint.">JointVelocitySetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
-<a name="l00125"></a>00125   <span class="keyword">public</span>:
-<a name="l00126"></a><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">00126</a>     quantity&lt;angular_velocity&gt; <a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">angularVelocity</a>;
-<a name="l00127"></a>00127 
+<a name="l00111"></a><a class="code" href="classyoubot_1_1_joint_sensed_torque.html">00111</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_torque.html" title="Sensed torque of the joint.">JointSensedTorque</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00112"></a>00112   <span class="keyword">public</span>:
+<a name="l00113"></a><a class="code" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">00113</a>     quantity&lt;si::torque&gt; <a class="code" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">torque</a>;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 };<span class="comment"></span>
+<a name="l00116"></a>00116 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00117"></a>00117 <span class="comment">/// sensed Temperature of the joint</span>
+<a name="l00118"></a>00118 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00119"></a><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html">00119</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html" title="sensed Temperature of the joint">JointSensedTemperature</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_sensed_data.html" title="abstract data class for sensed / measured joint data">JointSensedData</a> {
+<a name="l00120"></a>00120   <span class="keyword">public</span>:
+<a name="l00121"></a><a class="code" href="classyoubot_1_1_joint_sensed_temperature.html#a3a8c4914ec180c977efaa98026bdb6a6">00121</a>     quantity&lt;celsius::temperature&gt; <a class="code" href="classyoubot_1_1_joint_sensed_temperature.html#a3a8c4914ec180c977efaa98026bdb6a6">temperature</a>;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 };<span class="comment"></span>
+<a name="l00124"></a>00124 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00125"></a>00125 <span class="comment">/// abstract data class for commanded joint data</span>
+<a name="l00126"></a>00126 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00127"></a><a class="code" href="classyoubot_1_1_joint_data_setpoint.html">00127</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a> {
 <a name="l00128"></a>00128 };<span class="comment"></span>
 <a name="l00129"></a>00129 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00130"></a>00130 <span class="comment">/// Set-point current of the joint</span>
+<a name="l00130"></a>00130 <span class="comment">/// Set-point angle / position of the joint</span>
 <a name="l00131"></a>00131 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00132"></a><a class="code" href="classyoubot_1_1_joint_current_setpoint.html">00132</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_current_setpoint.html" title="Set-point current of the joint.">JointCurrentSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00132"></a><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html">00132</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html" title="Set-point angle / position of the joint.">JointAngleSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
 <a name="l00133"></a>00133   <span class="keyword">public</span>:
-<a name="l00134"></a><a class="code" href="classyoubot_1_1_joint_current_setpoint.html#a1545cb88cc5c6e94d687b301f0f5b284">00134</a>     quantity&lt;si::current&gt; <a class="code" href="classyoubot_1_1_joint_current_setpoint.html#a1545cb88cc5c6e94d687b301f0f5b284">current</a>;
+<a name="l00134"></a><a class="code" href="classyoubot_1_1_joint_angle_setpoint.html#a04fcdd16ee9354653ef72ef22a52678c">00134</a>     quantity&lt;plane_angle&gt; <a class="code" href="classyoubot_1_1_joint_angle_setpoint.html#a04fcdd16ee9354653ef72ef22a52678c">angle</a>;
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136 };<span class="comment"></span>
 <a name="l00137"></a>00137 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00138"></a>00138 <span class="comment">/// Set-point torque of the joint</span>
+<a name="l00138"></a>00138 <span class="comment">/// Set-point velocity of the joint</span>
 <a name="l00139"></a>00139 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00140"></a><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html">00140</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html" title="Set-point torque of the joint.">JointTorqueSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00140"></a><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html">00140</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html" title="Set-point velocity of the joint.">JointVelocitySetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
 <a name="l00141"></a>00141   <span class="keyword">public</span>:
-<a name="l00142"></a><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">00142</a>     quantity&lt;si::torque&gt; <a class="code" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">torque</a>;
+<a name="l00142"></a><a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">00142</a>     quantity&lt;angular_velocity&gt; <a class="code" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">angularVelocity</a>;
 <a name="l00143"></a>00143 
 <a name="l00144"></a>00144 };<span class="comment"></span>
 <a name="l00145"></a>00145 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00146"></a>00146 <span class="comment">/// Pulse-width modulation set-point of the joint</span>
+<a name="l00146"></a>00146 <span class="comment">/// Rounds per minute set-point of the joint</span>
 <a name="l00147"></a>00147 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
-<a name="l00148"></a><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html">00148</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html" title="Pulse-width modulation set-point of the joint.">JointPWMSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00148"></a><a class="code" href="classyoubot_1_1_joint_rounds_per_minute_setpoint.html">00148</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_rounds_per_minute_setpoint.html" title="Rounds per minute set-point of the joint.">JointRoundsPerMinuteSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
 <a name="l00149"></a>00149   <span class="keyword">public</span>:
-<a name="l00150"></a><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html#a490a9e9e2b50ef1774453ae170fc60a1">00150</a>     <span class="keywordtype">int</span> <a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html#a490a9e9e2b50ef1774453ae170fc60a1">pwm</a>;
+<a name="l00150"></a><a class="code" href="classyoubot_1_1_joint_rounds_per_minute_setpoint.html#a5d7afecfc9d91f67b0ad7c56202006f6">00150</a>     <span class="keywordtype">int</span> <a class="code" href="classyoubot_1_1_joint_rounds_per_minute_setpoint.html#a5d7afecfc9d91f67b0ad7c56202006f6">rpm</a>;
 <a name="l00151"></a>00151 
-<a name="l00152"></a>00152 };
-<a name="l00153"></a>00153 
-<a name="l00154"></a>00154 } <span class="comment">// namespace youbot</span>
-<a name="l00155"></a>00155 <span class="preprocessor">#endif</span>
+<a name="l00152"></a>00152 };<span class="comment"></span>
+<a name="l00153"></a>00153 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00154"></a>00154 <span class="comment">/// Set-point current of the joint</span>
+<a name="l00155"></a>00155 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00156"></a><a class="code" href="classyoubot_1_1_joint_current_setpoint.html">00156</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_current_setpoint.html" title="Set-point current of the joint.">JointCurrentSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00157"></a>00157   <span class="keyword">public</span>:
+<a name="l00158"></a><a class="code" href="classyoubot_1_1_joint_current_setpoint.html#a1545cb88cc5c6e94d687b301f0f5b284">00158</a>     quantity&lt;si::current&gt; <a class="code" href="classyoubot_1_1_joint_current_setpoint.html#a1545cb88cc5c6e94d687b301f0f5b284">current</a>;
+<a name="l00159"></a>00159 
+<a name="l00160"></a>00160 };<span class="comment"></span>
+<a name="l00161"></a>00161 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00162"></a>00162 <span class="comment">/// Set-point torque of the joint</span>
+<a name="l00163"></a>00163 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00164"></a><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html">00164</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html" title="Set-point torque of the joint.">JointTorqueSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00165"></a>00165   <span class="keyword">public</span>:
+<a name="l00166"></a><a class="code" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">00166</a>     quantity&lt;si::torque&gt; <a class="code" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">torque</a>;
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168 };<span class="comment"></span>
+<a name="l00169"></a>00169 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00170"></a>00170 <span class="comment">/// Pulse-width modulation set-point of the joint</span>
+<a name="l00171"></a>00171 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00172"></a><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html">00172</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html" title="Pulse-width modulation set-point of the joint.">JointPWMSetpoint</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_joint_data_setpoint.html" title="abstract data class for commanded joint data">JointDataSetpoint</a> {
+<a name="l00173"></a>00173   <span class="keyword">public</span>:
+<a name="l00174"></a><a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html#a490a9e9e2b50ef1774453ae170fc60a1">00174</a>     <span class="keywordtype">int</span> <a class="code" href="classyoubot_1_1_joint_p_w_m_setpoint.html#a490a9e9e2b50ef1774453ae170fc60a1">pwm</a>;
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 };
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 } <span class="comment">// namespace youbot</span>
+<a name="l00179"></a>00179 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <hr class="footer"/><address style="text-align: right;"><small>Generated by&nbsp;
 <a href="http://www.doxygen.org/index.html">
