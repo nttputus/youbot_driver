@@ -56,7 +56,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </li>
 </ul>
 </li>
-<li><a class="el" href="structyoubot_1_1_input_buffer.html">InputBuffer</a></li>
 <li><a class="el" href="classyoubot_1_1_joint.html">Joint</a><ul>
 <li><a class="el" href="classyoubot_1_1_you_bot_joint.html">YouBotJoint</a></li>
 </ul>
@@ -65,6 +64,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="classyoubot_1_1_joint_data_setpoint.html">JointDataSetpoint</a><ul>
 <li><a class="el" href="classyoubot_1_1_joint_angle_setpoint.html">JointAngleSetpoint</a></li>
 <li><a class="el" href="classyoubot_1_1_joint_current_setpoint.html">JointCurrentSetpoint</a></li>
+<li><a class="el" href="classyoubot_1_1_joint_encoder_setpoint.html">JointEncoderSetpoint</a></li>
 <li><a class="el" href="classyoubot_1_1_joint_p_w_m_setpoint.html">JointPWMSetpoint</a></li>
 <li><a class="el" href="classyoubot_1_1_joint_rounds_per_minute_setpoint.html">JointRoundsPerMinuteSetpoint</a></li>
 <li><a class="el" href="classyoubot_1_1_joint_torque_setpoint.html">JointTorqueSetpoint</a></li>
@@ -90,15 +90,49 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_input_buffer.html">mailboxInputBuffer</a></li>
 <li><a class="el" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_output_buffer.html">mailboxOutputBuffer</a></li>
 <li><a class="el" href="classyoubot_1_1_motor_protection.html">MotorProtection</a></li>
-<li><a class="el" href="structyoubot_1_1_output_buffer.html">OutputBuffer</a></li>
 <li><a class="el" href="classyoubot_1_1_parameter.html">Parameter</a><ul>
 <li><a class="el" href="classyoubot_1_1_gripper_parameter.html">GripperParameter</a><ul>
-<li><a class="el" href="classyoubot_1_1_gripper_firmware_version.html">GripperFirmwareVersion</a></li>
 <li><a class="el" href="classyoubot_1_1_you_bot_gripper_parameter.html">YouBotGripperParameter</a><ul>
+<li><a class="el" href="classyoubot_1_1_actual_load_value.html">ActualLoadValue</a></li>
 <li><a class="el" href="classyoubot_1_1_bar_spacing_offset.html">BarSpacingOffset</a></li>
 <li><a class="el" href="classyoubot_1_1_calibrate_gripper.html">CalibrateGripper</a></li>
+<li><a class="el" href="classyoubot_1_1_chopper_blank_time.html">ChopperBlankTime</a></li>
+<li><a class="el" href="classyoubot_1_1_chopper_hysteresis_decrement.html">ChopperHysteresisDecrement</a></li>
+<li><a class="el" href="classyoubot_1_1_chopper_hysteresis_end.html">ChopperHysteresisEnd</a></li>
+<li><a class="el" href="classyoubot_1_1_chopper_mode.html">ChopperMode</a></li>
+<li><a class="el" href="classyoubot_1_1_chopper_off_time.html">ChopperOffTime</a></li>
+<li><a class="el" href="classyoubot_1_1_double_step_enable.html">DoubleStepEnable</a></li>
+<li><a class="el" href="classyoubot_1_1_error_flags.html">ErrorFlags</a></li>
+<li><a class="el" href="classyoubot_1_1_freewheeling.html">Freewheeling</a></li>
+<li><a class="el" href="classyoubot_1_1_gripper_firmware_version.html">GripperFirmwareVersion</a></li>
 <li><a class="el" href="classyoubot_1_1_max_encoder_value.html">MaxEncoderValue</a></li>
+<li><a class="el" href="classyoubot_1_1_maximum_acceleration.html">MaximumAcceleration</a></li>
+<li><a class="el" href="classyoubot_1_1_maximum_current.html">MaximumCurrent</a></li>
+<li><a class="el" href="classyoubot_1_1_maximum_positioning_speed.html">MaximumPositioningSpeed</a></li>
 <li><a class="el" href="classyoubot_1_1_max_travel_distance.html">MaxTravelDistance</a></li>
+<li><a class="el" href="classyoubot_1_1_microstep_resolution.html">MicrostepResolution</a></li>
+<li><a class="el" href="classyoubot_1_1_power_down_delay.html">PowerDownDelay</a></li>
+<li><a class="el" href="classyoubot_1_1_pulse_divisor.html">PulseDivisor</a></li>
+<li><a class="el" href="classyoubot_1_1_ramp_divisor.html">RampDivisor</a></li>
+<li><a class="el" href="classyoubot_1_1_ramp_mode.html">RampMode</a></li>
+<li><a class="el" href="classyoubot_1_1_short_detection_timer.html">ShortDetectionTimer</a></li>
+<li><a class="el" href="classyoubot_1_1_short_protection_disable.html">ShortProtectionDisable</a></li>
+<li><a class="el" href="classyoubot_1_1_slope_control_high_side.html">SlopeControlHighSide</a></li>
+<li><a class="el" href="classyoubot_1_1_slope_control_low_side.html">SlopeControlLowSide</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_actual_current.html">SmartEnergyActualCurrent</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_current_down_step.html">SmartEnergyCurrentDownStep</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_current_minimum.html">SmartEnergyCurrentMinimum</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_current_up_step.html">SmartEnergyCurrentUpStep</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_hysteresis.html">SmartEnergyHysteresis</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_hysteresis_start.html">SmartEnergyHysteresisStart</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_slow_run_current.html">SmartEnergySlowRunCurrent</a></li>
+<li><a class="el" href="classyoubot_1_1_smart_energy_threshold_speed.html">SmartEnergyThresholdSpeed</a></li>
+<li><a class="el" href="classyoubot_1_1_stall_guard2_filter_enable.html">StallGuard2FilterEnable</a></li>
+<li><a class="el" href="classyoubot_1_1_stall_guard2_threshold.html">StallGuard2Threshold</a></li>
+<li><a class="el" href="classyoubot_1_1_standby_current.html">StandbyCurrent</a></li>
+<li><a class="el" href="classyoubot_1_1_step_interpolation_enable.html">StepInterpolationEnable</a></li>
+<li><a class="el" href="classyoubot_1_1_stop_on_stall.html">StopOnStall</a></li>
+<li><a class="el" href="classyoubot_1_1_vsense.html">Vsense</a></li>
 </ul>
 </li>
 </ul>
@@ -209,6 +243,8 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </li>
 </ul>
 </li>
+<li><a class="el" href="structyoubot_1_1_slave_message_input.html">SlaveMessageInput</a></li>
+<li><a class="el" href="structyoubot_1_1_slave_message_output.html">SlaveMessageOutput</a></li>
 <li><a class="el" href="classyoubot_1_1_sort_tree_vector.html">SortTreeVector</a></li>
 <li><a class="el" href="classyoubot_1_1_you_bot_base.html">YouBotBase</a></li>
 <li><a class="el" href="class_you_bot_base_test.html">YouBotBaseTest</a></li>

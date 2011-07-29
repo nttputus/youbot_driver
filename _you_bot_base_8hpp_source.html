@@ -24,7 +24,7 @@
       <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_b20df63dec99a6d1c83aff53bd0137ad.html">youbot</a>
+  <div class="navpath"><a class="el" href="dir_0459952b077697e33b50f7da69366589.html">youbot</a>
   </div>
 </div>
 <div class="contents">
@@ -120,75 +120,81 @@
 <a name="l00090"></a>00090 <span class="comment">    ///@param orientation is the rotation around the center of the YouBot</span>
 <a name="l00091"></a>00091 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#af8f227214faaff93068d3d70d529e842" title="gets the cartesien base position which is calculated from the odometry">getBasePosition</a>(quantity&lt;si::length&gt;&amp; longitudinalPosition, quantity&lt;si::length&gt;&amp; transversalPosition, quantity&lt;plane_angle&gt;&amp; orientation);
 <a name="l00092"></a>00092 <span class="comment"></span>
-<a name="l00093"></a>00093 <span class="comment">    ///gets the cartesien base velocity</span>
-<a name="l00094"></a>00094 <span class="comment">    ///@param longitudinalVelocity is the forward or backward velocity</span>
-<a name="l00095"></a>00095 <span class="comment">    ///@param transversalVelocity is the sideway velocity</span>
-<a name="l00096"></a>00096 <span class="comment">    ///@param angularVelocity is the rotational velocity around the center of the YouBot</span>
-<a name="l00097"></a>00097 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a67c1d1a93070e3f2580c2a5a8e28a613" title="gets the cartesien base velocity">getBaseVelocity</a>(quantity&lt;si::velocity&gt;&amp; longitudinalVelocity, quantity&lt;si::velocity&gt;&amp; transversalVelocity, quantity&lt;si::angular_velocity&gt;&amp; angularVelocity);
+<a name="l00093"></a>00093 <span class="comment">    ///sets the cartesien base position</span>
+<a name="l00094"></a>00094 <span class="comment">    ///@param longitudinalPosition is the forward or backward position</span>
+<a name="l00095"></a>00095 <span class="comment">    ///@param transversalPosition is the sideway position</span>
+<a name="l00096"></a>00096 <span class="comment">    ///@param orientation is the rotation around the center of the YouBot</span>
+<a name="l00097"></a>00097 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a57c4d699c6ae0983bba98ca5cf4fdfff" title="sets the cartesien base position">setBasePosition</a>(<span class="keyword">const</span> quantity&lt;si::length&gt;&amp; longitudinalPosition, <span class="keyword">const</span> quantity&lt;si::length&gt;&amp; transversalPosition, <span class="keyword">const</span> quantity&lt;plane_angle&gt;&amp; orientation);
 <a name="l00098"></a>00098 <span class="comment"></span>
-<a name="l00099"></a>00099 <span class="comment">    ///commands the base in cartesien velocities</span>
+<a name="l00099"></a>00099 <span class="comment">    ///gets the cartesien base velocity</span>
 <a name="l00100"></a>00100 <span class="comment">    ///@param longitudinalVelocity is the forward or backward velocity</span>
 <a name="l00101"></a>00101 <span class="comment">    ///@param transversalVelocity is the sideway velocity</span>
 <a name="l00102"></a>00102 <span class="comment">    ///@param angularVelocity is the rotational velocity around the center of the YouBot</span>
-<a name="l00103"></a>00103 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a85ebb1ed649a98966b00e5bb99cd3d5f" title="commands the base in cartesien velocities">setBaseVelocity</a>(<span class="keyword">const</span> quantity&lt;si::velocity&gt;&amp; longitudinalVelocity, <span class="keyword">const</span> quantity&lt;si::velocity&gt;&amp; transversalVelocity, <span class="keyword">const</span> quantity&lt;si::angular_velocity&gt;&amp; angularVelocity);
+<a name="l00103"></a>00103 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a67c1d1a93070e3f2580c2a5a8e28a613" title="gets the cartesien base velocity">getBaseVelocity</a>(quantity&lt;si::velocity&gt;&amp; longitudinalVelocity, quantity&lt;si::velocity&gt;&amp; transversalVelocity, quantity&lt;si::angular_velocity&gt;&amp; angularVelocity);
 <a name="l00104"></a>00104 <span class="comment"></span>
-<a name="l00105"></a>00105 <span class="comment">    ///This class represents the kinematic of the YouBot </span>
-<a name="l00106"></a><a class="code" href="classyoubot_1_1_you_bot_base.html#a3d09ebc369d2cf33df831a0e6cddeedc">00106</a> <span class="comment"></span>    <a class="code" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html" title="Implementation of a base kinematic with four swedish wheels.">FourSwedishWheelOmniBaseKinematic</a> <a class="code" href="classyoubot_1_1_you_bot_base.html#a3d09ebc369d2cf33df831a0e6cddeedc" title="This class represents the kinematic of the YouBot.">youBotBaseKinematic</a>;
-<a name="l00107"></a>00107 <span class="comment"></span>
-<a name="l00108"></a>00108 <span class="comment">    ///commands positions or angles to all base joints</span>
-<a name="l00109"></a>00109 <span class="comment">    ///all positions will be set at the same time</span>
-<a name="l00110"></a>00110 <span class="comment">    ///@param JointData the to command positions</span>
-<a name="l00111"></a>00111 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all base joints all positions will be set at the...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointAngleSetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
-<a name="l00112"></a>00112 <span class="comment"></span>
-<a name="l00113"></a>00113 <span class="comment">    ///gets the position or angle of all base joints which have been calculated from the actual encoder value</span>
-<a name="l00114"></a>00114 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00115"></a>00115 <span class="comment">    ///@param data returns the angles by reference</span>
-<a name="l00116"></a>00116 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedAngle&gt;&amp; data);
-<a name="l00117"></a>00117 <span class="comment"></span>
-<a name="l00118"></a>00118 <span class="comment">    ///commands velocities to all base joints</span>
-<a name="l00119"></a>00119 <span class="comment">    ///all velocities will be set at the same time</span>
-<a name="l00120"></a>00120 <span class="comment">    ///@param JointData the to command velocities</span>
-<a name="l00121"></a>00121 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all base joints all positions will be set at the...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointVelocitySetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
-<a name="l00122"></a>00122 <span class="comment"></span>
-<a name="l00123"></a>00123 <span class="comment">    ///gets the velocities of all base joints which have been calculated from the actual encoder values</span>
-<a name="l00124"></a>00124 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00125"></a>00125 <span class="comment">    ///@param data returns the velocities by reference</span>
-<a name="l00126"></a>00126 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedVelocity&gt;&amp; data);
-<a name="l00127"></a>00127 <span class="comment"></span>
-<a name="l00128"></a>00128 <span class="comment">    ///gets temperatures of all base motors which have been measured by a thermometer</span>
-<a name="l00129"></a>00129 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00130"></a>00130 <span class="comment">    ///@param data returns the actual temperatures by reference</span>
-<a name="l00131"></a>00131 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedTemperature&gt;&amp; data);
-<a name="l00132"></a>00132 <span class="comment"></span>
-<a name="l00133"></a>00133 <span class="comment">    ///gets the motor currents of all base joints which have been measured by a hal sensor</span>
-<a name="l00134"></a>00134 <span class="comment">    ///These values are all read at the same time from the different joints </span>
-<a name="l00135"></a>00135 <span class="comment">    ///@param data returns the actual motor currents by reference</span>
-<a name="l00136"></a>00136 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedCurrent&gt;&amp; data);
-<a name="l00137"></a>00137 
-<a name="l00138"></a>00138 
-<a name="l00139"></a>00139   <span class="keyword">private</span>:
-<a name="l00140"></a>00140     <span class="keywordtype">bool</span> areSame(<span class="keyword">const</span> <span class="keywordtype">double</span> A, <span class="keyword">const</span> <span class="keywordtype">double</span> B);
-<a name="l00141"></a>00141 
-<a name="l00142"></a>00142     <span class="keywordtype">void</span> initializeJoints();
+<a name="l00105"></a>00105 <span class="comment">    ///commands the base in cartesien velocities</span>
+<a name="l00106"></a>00106 <span class="comment">    ///@param longitudinalVelocity is the forward or backward velocity</span>
+<a name="l00107"></a>00107 <span class="comment">    ///@param transversalVelocity is the sideway velocity</span>
+<a name="l00108"></a>00108 <span class="comment">    ///@param angularVelocity is the rotational velocity around the center of the YouBot</span>
+<a name="l00109"></a>00109 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a85ebb1ed649a98966b00e5bb99cd3d5f" title="commands the base in cartesien velocities">setBaseVelocity</a>(<span class="keyword">const</span> quantity&lt;si::velocity&gt;&amp; longitudinalVelocity, <span class="keyword">const</span> quantity&lt;si::velocity&gt;&amp; transversalVelocity, <span class="keyword">const</span> quantity&lt;si::angular_velocity&gt;&amp; angularVelocity);
+<a name="l00110"></a>00110 <span class="comment"></span>
+<a name="l00111"></a>00111 <span class="comment">    ///This class represents the kinematic of the YouBot </span>
+<a name="l00112"></a><a class="code" href="classyoubot_1_1_you_bot_base.html#a3d09ebc369d2cf33df831a0e6cddeedc">00112</a> <span class="comment"></span>    <a class="code" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html" title="Implementation of a base kinematic with four swedish wheels.">FourSwedishWheelOmniBaseKinematic</a> <a class="code" href="classyoubot_1_1_you_bot_base.html#a3d09ebc369d2cf33df831a0e6cddeedc" title="This class represents the kinematic of the YouBot.">youBotBaseKinematic</a>;
+<a name="l00113"></a>00113 <span class="comment"></span>
+<a name="l00114"></a>00114 <span class="comment">    ///commands positions or angles to all base joints</span>
+<a name="l00115"></a>00115 <span class="comment">    ///all positions will be set at the same time</span>
+<a name="l00116"></a>00116 <span class="comment">    ///@param JointData the to command positions</span>
+<a name="l00117"></a>00117 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all base joints all positions will be set at the...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointAngleSetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
+<a name="l00118"></a>00118 <span class="comment"></span>
+<a name="l00119"></a>00119 <span class="comment">    ///gets the position or angle of all base joints which have been calculated from the actual encoder value</span>
+<a name="l00120"></a>00120 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00121"></a>00121 <span class="comment">    ///@param data returns the angles by reference</span>
+<a name="l00122"></a>00122 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedAngle&gt;&amp; data);
+<a name="l00123"></a>00123 <span class="comment"></span>
+<a name="l00124"></a>00124 <span class="comment">    ///commands velocities to all base joints</span>
+<a name="l00125"></a>00125 <span class="comment">    ///all velocities will be set at the same time</span>
+<a name="l00126"></a>00126 <span class="comment">    ///@param JointData the to command velocities</span>
+<a name="l00127"></a>00127 <span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#a08291f5e8196227c240aa14c6afa2c94" title="commands positions or angles to all base joints all positions will be set at the...">setJointData</a>(<span class="keyword">const</span> std::vector&lt;JointVelocitySetpoint&gt;&amp; <a class="code" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a>);
+<a name="l00128"></a>00128 <span class="comment"></span>
+<a name="l00129"></a>00129 <span class="comment">    ///gets the velocities of all base joints which have been calculated from the actual encoder values</span>
+<a name="l00130"></a>00130 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00131"></a>00131 <span class="comment">    ///@param data returns the velocities by reference</span>
+<a name="l00132"></a>00132 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedVelocity&gt;&amp; data);
+<a name="l00133"></a>00133 <span class="comment"></span>
+<a name="l00134"></a>00134 <span class="comment">    ///gets temperatures of all base motors which have been measured by a thermometer</span>
+<a name="l00135"></a>00135 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00136"></a>00136 <span class="comment">    ///@param data returns the actual temperatures by reference</span>
+<a name="l00137"></a>00137 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedTemperature&gt;&amp; data);
+<a name="l00138"></a>00138 <span class="comment"></span>
+<a name="l00139"></a>00139 <span class="comment">    ///gets the motor currents of all base joints which have been measured by a hal sensor</span>
+<a name="l00140"></a>00140 <span class="comment">    ///These values are all read at the same time from the different joints </span>
+<a name="l00141"></a>00141 <span class="comment">    ///@param data returns the actual motor currents by reference</span>
+<a name="l00142"></a>00142 <span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_base.html#aec8f0aca2e44650bdae203474b57cbfa" title="gets the position or angle of all base joints which have been calculated from the...">getJointData</a>(std::vector&lt;JointSensedCurrent&gt;&amp; data);
 <a name="l00143"></a>00143 
-<a name="l00144"></a>00144     <span class="keywordtype">void</span> initializeKinematic();
-<a name="l00145"></a>00145 
-<a name="l00146"></a>00146     <a class="code" href="classyoubot_1_1_config_file.html">ConfigFile</a>* configfile;
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145   <span class="keyword">private</span>:
+<a name="l00146"></a>00146     <span class="keywordtype">bool</span> areSame(<span class="keyword">const</span> <span class="keywordtype">double</span> A, <span class="keyword">const</span> <span class="keywordtype">double</span> B);
 <a name="l00147"></a>00147 
-<a name="l00148"></a>00148     std::vector&lt;YouBotJoint&gt; joints;
+<a name="l00148"></a>00148     <span class="keywordtype">void</span> initializeJoints();
 <a name="l00149"></a>00149 
-<a name="l00150"></a>00150     std::string configFilePath;
+<a name="l00150"></a>00150     <span class="keywordtype">void</span> initializeKinematic();
 <a name="l00151"></a>00151 
-<a name="l00152"></a>00152     std::string ethercatConfigFileName;
+<a name="l00152"></a>00152     <a class="code" href="classyoubot_1_1_config_file.html">ConfigFile</a>* configfile;
 <a name="l00153"></a>00153 
-<a name="l00154"></a>00154     <span class="keywordtype">int</span> controllerType;
+<a name="l00154"></a>00154     std::vector&lt;YouBotJoint&gt; joints;
 <a name="l00155"></a>00155 
-<a name="l00156"></a>00156     <span class="keywordtype">double</span> minFirmwareVersion;
+<a name="l00156"></a>00156     std::string configFilePath;
 <a name="l00157"></a>00157 
-<a name="l00158"></a>00158 };
+<a name="l00158"></a>00158     std::string ethercatConfigFileName;
 <a name="l00159"></a>00159 
-<a name="l00160"></a>00160 } <span class="comment">// namespace youbot</span>
-<a name="l00161"></a>00161 <span class="preprocessor">#endif</span>
+<a name="l00160"></a>00160     <span class="keywordtype">int</span> controllerType;
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162     <span class="keywordtype">double</span> minFirmwareVersion;
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164 };
+<a name="l00165"></a>00165 
+<a name="l00166"></a>00166 } <span class="comment">// namespace youbot</span>
+<a name="l00167"></a>00167 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <hr class="footer"/><address style="text-align: right;"><small>Generated by&nbsp;
 <a href="http://www.doxygen.org/index.html">

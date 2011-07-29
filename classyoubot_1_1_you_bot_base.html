@@ -53,6 +53,8 @@ Collaboration diagram for YouBotBase:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return a joint form the base  <a href="#ae0746a6350ace075ecc8dff2ba6c6786"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_base.html#af8f227214faaff93068d3d70d529e842">getBasePosition</a> (quantity&lt; si::length &gt; &amp;longitudinalPosition, quantity&lt; si::length &gt; &amp;transversalPosition, quantity&lt; plane_angle &gt; &amp;orientation)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the cartesien base position which is calculated from the odometry  <a href="#af8f227214faaff93068d3d70d529e842"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_base.html#a57c4d699c6ae0983bba98ca5cf4fdfff">setBasePosition</a> (const quantity&lt; si::length &gt; &amp;longitudinalPosition, const quantity&lt; si::length &gt; &amp;transversalPosition, const quantity&lt; plane_angle &gt; &amp;orientation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the cartesien base position  <a href="#a57c4d699c6ae0983bba98ca5cf4fdfff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_base.html#a67c1d1a93070e3f2580c2a5a8e28a613">getBaseVelocity</a> (quantity&lt; si::velocity &gt; &amp;longitudinalVelocity, quantity&lt; si::velocity &gt; &amp;transversalVelocity, quantity&lt; si::angular_velocity &gt; &amp;angularVelocity)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the cartesien base velocity  <a href="#a67c1d1a93070e3f2580c2a5a8e28a613"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_base.html#a85ebb1ed649a98966b00e5bb99cd3d5f">setBaseVelocity</a> (const quantity&lt; si::velocity &gt; &amp;longitudinalVelocity, const quantity&lt; si::velocity &gt; &amp;transversalVelocity, const quantity&lt; si::angular_velocity &gt; &amp;angularVelocity)</td></tr>
@@ -350,6 +352,49 @@ Collaboration diagram for YouBotBase:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the angles by reference </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a57c4d699c6ae0983bba98ca5cf4fdfff"></a><!-- doxytag: member="youbot::YouBotBase::setBasePosition" ref="a57c4d699c6ae0983bba98ca5cf4fdfff" args="(const quantity&lt; si::length &gt; &amp;longitudinalPosition, const quantity&lt; si::length &gt; &amp;transversalPosition, const quantity&lt; plane_angle &gt; &amp;orientation)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBasePosition </td>
+          <td>(</td>
+          <td class="paramtype">const quantity&lt; si::length &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>longitudinalPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const quantity&lt; si::length &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>transversalPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const quantity&lt; plane_angle &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>orientation</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the cartesien base position </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>longitudinalPosition</em>&nbsp;</td><td>is the forward or backward position </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>transversalPosition</em>&nbsp;</td><td>is the sideway position </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>orientation</em>&nbsp;</td><td>is the rotation around the center of the YouBot </td></tr>
   </table>
   </dd>
 </dl>

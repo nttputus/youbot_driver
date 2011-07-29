@@ -60,6 +60,8 @@ Collaboration diagram for FourSwedishWheelOmniBaseKinematic:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates from the wheel velocities the cartesian velocity.  <a href="#aaecba29de95dafc8fde87a8762762cb5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html#a07e1df8bd79367248c5c407223a06a00">wheelPositionsToCartesianPosition</a> (const std::vector&lt; quantity&lt; plane_angle &gt; &gt; &amp;wheelPositions, quantity&lt; si::length &gt; &amp;longitudinalPosition, quantity&lt; si::length &gt; &amp;transversalPosition, quantity&lt; plane_angle &gt; &amp;orientation)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates from the wheel positions the cartesian position.  <a href="#a07e1df8bd79367248c5c407223a06a00"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html#a2e11cc794e8b54d646ccfbbe624c923e">cartesianPositionToWheelPositions</a> (const quantity&lt; si::length &gt; &amp;longitudinalPosition, const quantity&lt; si::length &gt; &amp;transversalPosition, const quantity&lt; plane_angle &gt; &amp;orientation, std::vector&lt; quantity&lt; plane_angle &gt; &gt; &amp;wheelPositions)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calculates from the cartesian position the wheel positions.  <a href="#a2e11cc794e8b54d646ccfbbe624c923e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html#ad30e1ec8e143edf279f36f991fa6bf3e">setConfiguration</a> (const <a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic_configuration.html">FourSwedishWheelOmniBaseKinematicConfiguration</a> &amp;configuration)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic.html#a107611af26173ffdb41044406eb8fe4b">getConfiguration</a> (<a class="el" href="classyoubot_1_1_four_swedish_wheel_omni_base_kinematic_configuration.html">FourSwedishWheelOmniBaseKinematicConfiguration</a> &amp;configuration) const </td></tr>
 </table>
@@ -102,6 +104,56 @@ Collaboration diagram for FourSwedishWheelOmniBaseKinematic:</div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a2e11cc794e8b54d646ccfbbe624c923e"></a><!-- doxytag: member="youbot::FourSwedishWheelOmniBaseKinematic::cartesianPositionToWheelPositions" ref="a2e11cc794e8b54d646ccfbbe624c923e" args="(const quantity&lt; si::length &gt; &amp;longitudinalPosition, const quantity&lt; si::length &gt; &amp;transversalPosition, const quantity&lt; plane_angle &gt; &amp;orientation, std::vector&lt; quantity&lt; plane_angle &gt; &gt; &amp;wheelPositions)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cartesianPositionToWheelPositions </td>
+          <td>(</td>
+          <td class="paramtype">const quantity&lt; si::length &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>longitudinalPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const quantity&lt; si::length &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>transversalPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const quantity&lt; plane_angle &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>orientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; quantity&lt; plane_angle &gt; &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>wheelPositions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calculates from the cartesian position the wheel positions. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>longitudinalPosition</em>&nbsp;</td><td>is the forward or backward position </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>transversalPosition</em>&nbsp;</td><td>is the sideway position </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>orientation</em>&nbsp;</td><td>is the rotation around the center </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>wheelPositions</em>&nbsp;</td><td>are the individual positions of the wheels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a951d05311f9fba793905240491ae926b"></a><!-- doxytag: member="youbot::FourSwedishWheelOmniBaseKinematic::cartesianVelocityToWheelVelocities" ref="a951d05311f9fba793905240491ae926b" args="(const quantity&lt; si::velocity &gt; &amp;longitudinalVelocity, const quantity&lt; si::velocity &gt; &amp;transversalVelocity, const quantity&lt; si::angular_velocity &gt; &amp;angularVelocity, std::vector&lt; quantity&lt; angular_velocity &gt; &gt; &amp;wheelVelocities)" -->
 <div class="memitem">
 <div class="memproto">

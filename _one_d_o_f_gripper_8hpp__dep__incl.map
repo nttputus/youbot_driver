@@ -1,8 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$_you_bot_gripper_8hpp.html" title="YouBotGripper.hpp" alt="" coords="164,83,295,112"/>
-<area shape="rect" href="$_test_01_07copy_08_8cpp.html" title="Test (copy).cpp" alt="" coords="5,160,117,189"/>
-<area shape="rect" href="$_test_8cpp.html" title="Test.cpp" alt="" coords="208,237,280,267"/>
-<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="216,160,347,189"/>
-<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="371,160,525,189"/>
-<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="371,237,525,267"/>
+<area shape="rect" href="$_you_bot_gripper_8hpp.html" title="YouBotGripper.hpp" alt="" coords="88,83,219,112"/>
+<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="5,160,136,189"/>
+<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="160,160,315,189"/>
+<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="160,237,315,267"/>
 </map>

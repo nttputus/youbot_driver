@@ -35,11 +35,52 @@ Example how to use:</a></h2>
 
 <span class="keywordtype">int</span> <a class="code" href="_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
   <span class="keywordflow">try</span> {
+    <span class="comment"></span>
+<span class="comment">    ///////// Usage of the base  /////////</span>
+<span class="comment"></span>    
+    <span class="comment">// creates a YouBotBase instance with the name &quot;youbot-base&quot; which is also the name of the config file</span>
     YouBotBase myYouBotBase(<span class="stringliteral">&quot;youbot-base&quot;</span>);
 
     <span class="comment">// do the sine commutation of the base joints</span>
     myYouBotBase.doJointCommutation();
+    
+    <span class="comment">// create variables to set and get the base cartesian velocity and pose</span>
+    quantity&lt;si::velocity&gt; longitudinalVelocity = 0.2 * meter_per_second;
+    quantity&lt;si::velocity&gt; transversalVelocity = 0.0 * meter_per_second;
+    quantity&lt;si::angular_velocity&gt; angularVelocity = 0 * radian_per_second;
 
+    quantity&lt;si::velocity&gt; actualLongitudinalVelocity = 0 * meter_per_second;
+    quantity&lt;si::velocity&gt; actualTransversalVelocity = 0 * meter_per_second;
+    quantity&lt;si::angular_velocity&gt; actualAngularVelocity = 0 * radian_per_second;
+
+    quantity&lt;si::length&gt; actualLongitudinalPose = 0 * meter;
+    quantity&lt;si::length&gt; actualTransversalPose = 0 * meter;
+    quantity&lt;si::plane_angle&gt; actualAngle = 0 * radian;
+    
+    <span class="comment">// sets the base cartesian velocity</span>
+    myYouBotBase.setBaseVelocity(longitudinalVelocity, transversalVelocity, angularVelocity);
+    
+    <span class="comment">// reads the base cartesian velocity</span>
+    myYouBotBase.getBaseVelocity(actualLongitudinalVelocity, actualTransversalVelocity, actualAngularVelocity);
+    
+    <span class="comment">// reads the base cartesian position which have been calculated from the odometry</span>
+    myYouBotBase.getBasePosition(actualLongitudinalPose, actualTransversalPose, actualAngle);
+    
+    <span class="comment">// print the actual cartesian velocity</span>
+    <a class="code" href="_logger_8hpp.html#aba7b09d6e8fbe414c23705ad24dde6ff">LOG</a>(info) &lt;&lt; <span class="stringliteral">&quot;actual velocity longitudinal: &quot;</span> &lt;&lt; actualLongitudinalVelocity &lt;&lt; <span class="stringliteral">&quot; transversal: &quot;</span> &lt;&lt; actualTransversalVelocity &lt;&lt; <span class="stringliteral">&quot; angular: &quot;</span> &lt;&lt; actualAngularVelocity;
+    
+    <span class="comment">//command base joint 1 a velocity of 2 radian per second</span>
+    JointVelocitySetpoint setVel;
+    setVel.angularVelocity = 2 *radian_per_second;
+    myYouBotBase.getBaseJoint(1).setData(setVel);
+    setVel.angularVelocity = 0 *radian_per_second;
+    myYouBotBase.getBaseJoint(1).setData(setVel);
+    
+    
+    <span class="comment"></span>
+<span class="comment">    ///////// Usage of the manipulator  /////////</span>
+<span class="comment"></span>
+    <span class="comment">// creates a YouBotManipulator instance with the name &quot;youbot-manipulator&quot; which is also the name of the config file</span>
     YouBotManipulator myYouBotManipulator(<span class="stringliteral">&quot;youbot-manipulator&quot;</span>);
 
     <span class="comment">// do the sine commutation of the arm joints</span>
@@ -47,13 +88,6 @@ Example how to use:</a></h2>
 
     <span class="comment">// calibrate the reference position of the arm joints</span>
     myYouBotManipulator.calibrateManipulator();
-
-    <span class="comment">//command base joint 1 a velocity of 2 radian per second</span>
-    JointVelocitySetpoint setVel;
-    setVel.angularVelocity = 2 *radian_per_second;
-    myYouBotBase.getBaseJoint(1).setData(setVel);
-    setVel.angularVelocity = 0 *radian_per_second;
-    myYouBotBase.getBaseJoint(1).setData(setVel);
 
     <span class="comment">//receive motor current form joint 1 of the manipulator</span>
     JointSensedCurrent current;
@@ -70,6 +104,19 @@ Example how to use:</a></h2>
     <span class="comment">//configure 2 radian_per_second as the maximum positioning velocity of the manipulator joint 1</span>
     maxPositioningVelocity.setParameter(2 * radian_per_second);
     myYouBotManipulator.getArmJoint(1).setConfigurationParameter(maxPositioningVelocity);
+    
+    
+    <span class="comment"></span>
+<span class="comment">    ///////// Usage of the gripper  /////////</span>
+<span class="comment"></span>    
+    <span class="comment">// calibrate the reference position of the gripper</span>
+    myYouBotManipulator.calibrateGripper();
+    
+    <span class="comment">// open the gripper 2 cm</span>
+    GripperBarSpacingSetPoint gripperSetPoint;
+    gripperSetPoint.barSpacing = 0.02 * meter;
+    myYouBotManipulator.getArmGripper().setData(gripperSetPoint);
+    
 
   } <span class="keywordflow">catch</span> (std::exception&amp; e) {
     std::cout &lt;&lt; e.what() &lt;&lt; std::endl;

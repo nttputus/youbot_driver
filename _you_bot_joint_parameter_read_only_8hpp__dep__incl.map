@@ -1,18 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" href="$_you_bot_joint_parameter_8hpp.html" title="YouBotJointParameter.hpp" alt="" coords="401,83,577,112"/>
-<area shape="rect" href="$_you_bot_joint_parameter_read_only_8cpp.html" title="YouBotJointParameterReadOnly.cpp" alt="" coords="601,83,833,112"/>
-<area shape="rect" href="$_test_01_07copy_08_8cpp.html" title="Test (copy).cpp" alt="" coords="451,315,563,344"/>
-<area shape="rect" href="$_test_8cpp.html" title="Test.cpp" alt="" coords="464,392,536,421"/>
-<area shape="rect" href="$_you_bot_base_8hpp.html" title="YouBotBase.hpp" alt="" coords="259,315,376,344"/>
-<area shape="rect" href="$_you_bot_joint_8hpp.html" title="YouBotJoint.hpp" alt="" coords="557,237,672,267"/>
-<area shape="rect" href="$_you_bot_joint_parameter_8cpp.html" title="YouBotJointParameter.cpp" alt="" coords="552,160,728,189"/>
-<area shape="rect" href="$_you_bot_joint_parameter_password_protected_8hpp.html" title="YouBotJointParameterPasswordProtected.hpp" alt="" coords="752,160,1040,189"/>
-<area shape="rect" href="$_test_suite_8cpp.html" title="TestSuite.cpp" alt="" coords="147,392,248,421"/>
-<area shape="rect" href="$_you_bot_base_test_8hpp.html" title="YouBotBaseTest.hpp" alt="" coords="296,392,440,421"/>
-<area shape="rect" href="$_you_bot_base_8cpp.html" title="YouBotBase.cpp" alt="" coords="5,392,123,421"/>
-<area shape="rect" href="$_you_bot_base_test_8cpp.html" title="YouBotBaseTest.cpp" alt="" coords="296,469,440,499"/>
-<area shape="rect" href="$_you_bot_joint_8cpp.html" title="YouBotJoint.cpp" alt="" coords="789,315,904,344"/>
-<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="611,315,765,344"/>
-<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="611,392,765,421"/>
-<area shape="rect" href="$_you_bot_joint_parameter_password_protected_8cpp.html" title="YouBotJointParameterPasswordProtected.cpp" alt="" coords="752,237,1040,267"/>
+<area shape="rect" href="$_you_bot_joint_parameter_8hpp.html" title="YouBotJointParameter.hpp" alt="" coords="253,83,429,112"/>
+<area shape="rect" href="$_you_bot_joint_parameter_read_only_8cpp.html" title="YouBotJointParameterReadOnly.cpp" alt="" coords="453,83,685,112"/>
+<area shape="rect" href="$_you_bot_base_8hpp.html" title="YouBotBase.hpp" alt="" coords="169,315,287,344"/>
+<area shape="rect" href="$_you_bot_joint_8hpp.html" title="YouBotJoint.hpp" alt="" coords="319,237,433,267"/>
+<area shape="rect" href="$_you_bot_joint_parameter_8cpp.html" title="YouBotJointParameter.cpp" alt="" coords="316,160,492,189"/>
+<area shape="rect" href="$_you_bot_joint_parameter_password_protected_8hpp.html" title="YouBotJointParameterPasswordProtected.hpp" alt="" coords="516,160,804,189"/>
+<area shape="rect" href="$_test_suite_8cpp.html" title="TestSuite.cpp" alt="" coords="5,392,107,421"/>
+<area shape="rect" href="$_you_bot_base_test_8hpp.html" title="YouBotBaseTest.hpp" alt="" coords="155,392,299,421"/>
+<area shape="rect" href="$_you_bot_base_8cpp.html" title="YouBotBase.cpp" alt="" coords="323,392,440,421"/>
+<area shape="rect" href="$_you_bot_base_test_8cpp.html" title="YouBotBaseTest.cpp" alt="" coords="155,469,299,499"/>
+<area shape="rect" href="$_you_bot_joint_8cpp.html" title="YouBotJoint.cpp" alt="" coords="319,315,433,344"/>
+<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="461,315,616,344"/>
+<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="464,392,619,421"/>
+<area shape="rect" href="$_you_bot_joint_parameter_password_protected_8cpp.html" title="YouBotJointParameterPasswordProtected.cpp" alt="" coords="516,237,804,267"/>
 </map>

@@ -1,16 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$_ethercat_master_8hpp.html" title="EthercatMaster.hpp" alt="" coords="389,83,525,112"/>
-<area shape="rect" href="$_motor_protection_8cpp.html" title="MotorProtection.cpp" alt="" coords="549,83,688,112"/>
-<area shape="rect" href="$_test_01_07copy_08_8cpp.html" title="Test (copy).cpp" alt="" coords="5,160,117,189"/>
-<area shape="rect" href="$_ethercat_master_8cpp.html" title="EthercatMaster.cpp" alt="" coords="165,160,301,189"/>
-<area shape="rect" href="$_you_bot_base_8hpp.html" title="YouBotBase.hpp" alt="" coords="325,160,443,189"/>
-<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="467,160,597,189"/>
-<area shape="rect" href="$_you_bot_joint_8cpp.html" title="YouBotJoint.cpp" alt="" coords="621,160,736,189"/>
-<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="760,160,915,189"/>
-<area shape="rect" href="$_test_8cpp.html" title="Test.cpp" alt="" coords="643,237,715,267"/>
-<area shape="rect" href="$_test_suite_8cpp.html" title="TestSuite.cpp" alt="" coords="163,237,264,267"/>
-<area shape="rect" href="$_you_bot_base_test_8hpp.html" title="YouBotBaseTest.hpp" alt="" coords="312,237,456,267"/>
-<area shape="rect" href="$_you_bot_base_8cpp.html" title="YouBotBase.cpp" alt="" coords="480,237,597,267"/>
-<area shape="rect" href="$_you_bot_base_test_8cpp.html" title="YouBotBaseTest.cpp" alt="" coords="312,315,456,344"/>
-<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="760,237,915,267"/>
+<area shape="rect" href="$_ethercat_master_8hpp.html" title="EthercatMaster.hpp" alt="" coords="307,83,443,112"/>
+<area shape="rect" href="$_motor_protection_8cpp.html" title="MotorProtection.cpp" alt="" coords="467,83,605,112"/>
+<area shape="rect" href="$_ethercat_master_8cpp.html" title="EthercatMaster.cpp" alt="" coords="8,160,144,189"/>
+<area shape="rect" href="$_you_bot_base_8hpp.html" title="YouBotBase.hpp" alt="" coords="168,160,285,189"/>
+<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="309,160,440,189"/>
+<area shape="rect" href="$_you_bot_joint_8cpp.html" title="YouBotJoint.cpp" alt="" coords="464,160,579,189"/>
+<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="603,160,757,189"/>
+<area shape="rect" href="$_test_suite_8cpp.html" title="TestSuite.cpp" alt="" coords="5,237,107,267"/>
+<area shape="rect" href="$_you_bot_base_test_8hpp.html" title="YouBotBaseTest.hpp" alt="" coords="155,237,299,267"/>
+<area shape="rect" href="$_you_bot_base_8cpp.html" title="YouBotBase.cpp" alt="" coords="323,237,440,267"/>
+<area shape="rect" href="$_you_bot_base_test_8cpp.html" title="YouBotBaseTest.cpp" alt="" coords="155,315,299,344"/>
+<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="603,237,757,267"/>
 </map>

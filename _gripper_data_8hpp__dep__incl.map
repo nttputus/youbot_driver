@@ -1,11 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$_gripper_8hpp.html" title="Gripper.hpp" alt="" coords="467,83,555,112"/>
-<area shape="rect" href="$_one_d_o_f_gripper_8hpp.html" title="OneDOFGripper.hpp" alt="" coords="335,160,473,189"/>
-<area shape="rect" href="$_you_bot_gripper_8hpp.html" title="YouBotGripper.hpp" alt="" coords="155,237,285,267"/>
-<area shape="rect" href="$_test_01_07copy_08_8cpp.html" title="Test (copy).cpp" alt="" coords="459,315,571,344"/>
-<area shape="rect" href="$_one_d_o_f_gripper_data_8hpp.html" title="OneDOFGripperData.hpp" alt="" coords="227,83,392,112"/>
-<area shape="rect" href="$_test_8cpp.html" title="Test.cpp" alt="" coords="184,392,256,421"/>
-<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="257,315,388,344"/>
-<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="28,315,183,344"/>
-<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="5,392,160,421"/>
+<area shape="rect" href="$_gripper_8hpp.html" title="Gripper.hpp" alt="" coords="5,83,93,112"/>
+<area shape="rect" href="$_one_d_o_f_gripper_8hpp.html" title="OneDOFGripper.hpp" alt="" coords="81,160,220,189"/>
+<area shape="rect" href="$_you_bot_gripper_8hpp.html" title="YouBotGripper.hpp" alt="" coords="139,237,269,267"/>
+<area shape="rect" href="$_one_d_o_f_gripper_data_8hpp.html" title="OneDOFGripperData.hpp" alt="" coords="168,83,333,112"/>
+<area shape="rect" href="$_you_bot_gripper_8cpp.html" title="YouBotGripper.cpp" alt="" coords="56,315,187,344"/>
+<area shape="rect" href="$_you_bot_manipulator_8hpp.html" title="YouBotManipulator.hpp" alt="" coords="211,315,365,344"/>
+<area shape="rect" href="$_you_bot_manipulator_8cpp.html" title="YouBotManipulator.cpp" alt="" coords="211,392,365,421"/>
 </map>

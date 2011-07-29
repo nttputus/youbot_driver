@@ -76,6 +76,8 @@ Collaboration diagram for YouBotJoint:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Restores the joint parameter from the EEPROM.  <a href="#a73e5e0592773a80e574301a65f1a7806"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a4970188d22bec5016137d9d6d99bcb9f">setData</a> (const <a class="el" href="classyoubot_1_1_joint_angle_setpoint.html">JointAngleSetpoint</a> &amp;data, SyncMode communicationMode=NON_BLOCKING)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands a position or angle to one joint  <a href="#a4970188d22bec5016137d9d6d99bcb9f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#af78df7a0a9efafe91de3a1fd9202127b">setData</a> (const <a class="el" href="classyoubot_1_1_joint_encoder_setpoint.html">JointEncoderSetpoint</a> &amp;data, SyncMode communicationMode=NON_BLOCKING)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands a encoder value (position) to one joint  <a href="#af78df7a0a9efafe91de3a1fd9202127b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a1cfedacb30f38d70c4ba489d337887a3">getData</a> (<a class="el" href="classyoubot_1_1_joint_sensed_angle.html">JointSensedAngle</a> &amp;data)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the position or angle of one joint which have been calculated from the actual encoder value  <a href="#a1cfedacb30f38d70c4ba489d337887a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a514edf42ac98906e023cd07480176f72">setData</a> (const <a class="el" href="classyoubot_1_1_joint_velocity_setpoint.html">JointVelocitySetpoint</a> &amp;data, SyncMode communicationMode=NON_BLOCKING)</td></tr>
@@ -96,6 +98,10 @@ Collaboration diagram for YouBotJoint:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands a pulse-width modulation to one joint  <a href="#ab37749288600772ad530f6722d5b840d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a3d6170d18e7ad7492466b7330661ed28">getData</a> (<a class="el" href="classyoubot_1_1_joint_sensed_encoder_ticks.html">JointSensedEncoderTicks</a> &amp;data)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the encoder ticks of one joint  <a href="#a3d6170d18e7ad7492466b7330661ed28"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a5ac1be4ba9da1a8f42a95d1b736836f1">setData</a> (const <a class="el" href="structyoubot_1_1_slave_message_output.html">SlaveMessageOutput</a> &amp;data, SyncMode communicationMode=NON_BLOCKING)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the output part of a EtherCAT slave message this methode should be only used if you know what you are doing  <a href="#a5ac1be4ba9da1a8f42a95d1b736836f1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a0e32d40cd5a09f93ed4ccb7b1748dfbe">getData</a> (<a class="el" href="structyoubot_1_1_slave_message_input.html">SlaveMessageInput</a> &amp;data)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the input part of a EtherCAT slave message, the sensor values this methode should be only used if you know what you are doing  <a href="#a0e32d40cd5a09f93ed4ccb7b1748dfbe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#ae6bb64697e202afe37bfd7285cb7e3db">getUserVariable</a> (const unsigned int index, int &amp;data)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#aa50ab4d9a045bfdac0f99dab006a9bff">setUserVariable</a> (const unsigned int index, const int data)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_joint.html#a41fff88484f2b6246a2b132ea9503bbd">getStatus</a> (std::vector&lt; std::string &gt; &amp;statusMessages)</td></tr>
@@ -295,6 +301,32 @@ Collaboration diagram for YouBotJoint:</div>
 <div class="memdoc">
 
 <p>Implements <a class="el" href="classyoubot_1_1_joint.html#ae445a9df58eb1ab66f177430723c71e6">Joint</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e32d40cd5a09f93ed4ccb7b1748dfbe"></a><!-- doxytag: member="youbot::YouBotJoint::getData" ref="a0e32d40cd5a09f93ed4ccb7b1748dfbe" args="(SlaveMessageInput &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structyoubot_1_1_slave_message_input.html">SlaveMessageInput</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>gets the input part of a EtherCAT slave message, the sensor values this methode should be only used if you know what you are doing </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the sensor values by reference </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -761,6 +793,42 @@ Collaboration diagram for YouBotJoint:</div>
 
 </div>
 </div>
+<a class="anchor" id="a5ac1be4ba9da1a8f42a95d1b736836f1"></a><!-- doxytag: member="youbot::YouBotJoint::setData" ref="a5ac1be4ba9da1a8f42a95d1b736836f1" args="(const SlaveMessageOutput &amp;data, SyncMode communicationMode=NON_BLOCKING)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structyoubot_1_1_slave_message_output.html">SlaveMessageOutput</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SyncMode&nbsp;</td>
+          <td class="paramname"> <em>communicationMode</em> = <code>NON_BLOCKING</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the output part of a EtherCAT slave message this methode should be only used if you know what you are doing </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>output part of a EtherCAT slave message </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>communicationMode</em>&nbsp;</td><td>at the moment only non blocking communication is implemented </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab37749288600772ad530f6722d5b840d"></a><!-- doxytag: member="youbot::YouBotJoint::setData" ref="ab37749288600772ad530f6722d5b840d" args="(const JointPWMSetpoint &amp;data, SyncMode communicationMode=NON_BLOCKING)" -->
 <div class="memitem">
 <div class="memproto">
@@ -898,6 +966,42 @@ Collaboration diagram for YouBotJoint:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>the to command velocity </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>communicationMode</em>&nbsp;</td><td>at the moment only non blocking communication is implemented </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af78df7a0a9efafe91de3a1fd9202127b"></a><!-- doxytag: member="youbot::YouBotJoint::setData" ref="af78df7a0a9efafe91de3a1fd9202127b" args="(const JointEncoderSetpoint &amp;data, SyncMode communicationMode=NON_BLOCKING)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classyoubot_1_1_joint_encoder_setpoint.html">JointEncoderSetpoint</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SyncMode&nbsp;</td>
+          <td class="paramname"> <em>communicationMode</em> = <code>NON_BLOCKING</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>commands a encoder value (position) to one joint </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>the to command encoder value </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>communicationMode</em>&nbsp;</td><td>at the moment only non blocking communication is implemented </td></tr>
   </table>
   </dd>
