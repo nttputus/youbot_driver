@@ -24,7 +24,7 @@
       <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_0459952b077697e33b50f7da69366589.html">youbot</a>
+  <div class="navpath"><a class="el" href="dir_b20df63dec99a6d1c83aff53bd0137ad.html">youbot</a>
   </div>
 </div>
 <div class="contents">
@@ -106,7 +106,7 @@
 <a name="l00076"></a>00076   <span class="keyword">public</span>:
 <a name="l00077"></a>00077     <span class="keyword">virtual</span> <a class="code" href="classyoubot_1_1_you_bot_joint_parameter_read_only.html#a1d6c28076c41cb05ace8da46dab461f1">~YouBotJointParameterReadOnly</a>();
 <a name="l00078"></a>00078 
-<a name="l00079"></a>00079     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_joint_parameter_read_only.html#aafb2021b6f3e74a710a59a0a74ccc358">toString</a>(std::string&amp; value);
+<a name="l00079"></a>00079     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_you_bot_joint_parameter_read_only.html#aafb2021b6f3e74a710a59a0a74ccc358">toString</a>(std::string&amp; value);
 <a name="l00080"></a>00080 
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082   <span class="keyword">protected</span>:
@@ -421,10 +421,72 @@
 <a name="l00391"></a>00391 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
 <a name="l00392"></a>00392 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0">    ::ParameterType</a> parameterType;
 <a name="l00393"></a>00393 
-<a name="l00394"></a>00394 };
-<a name="l00395"></a>00395 
-<a name="l00396"></a>00396 } <span class="comment">// namespace youbot</span>
-<a name="l00397"></a>00397 <span class="preprocessor">#endif</span>
+<a name="l00394"></a>00394 };<span class="comment"></span>
+<a name="l00395"></a>00395 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00396"></a>00396 <span class="comment">/// Actual temperature of the motor driver. </span>
+<a name="l00397"></a>00397 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00398"></a><a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html">00398</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html" title="Actual temperature of the motor driver.">ActualMotorDriverTemperature</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_you_bot_joint_parameter_read_only.html" title="abstract youBot joint parameter which can be read only">YouBotJointParameterReadOnly</a> {
+<a name="l00399"></a><a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html#a5f426de16c6d8325734de356de32c917">00399</a> <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classyoubot_1_1_you_bot_joint.html" title="youBot joint for the base and the manipulator.">YouBotJoint</a>;
+<a name="l00400"></a>00400   <span class="keyword">public</span>:
+<a name="l00401"></a>00401     <a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html#af292370d6d8ee7c131560acaad5f93f7">ActualMotorDriverTemperature</a>();
+<a name="l00402"></a>00402 
+<a name="l00403"></a>00403     <span class="keyword">virtual</span> <a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html#a76f449105fa78a82925a329a4cc82d03">~ActualMotorDriverTemperature</a>();
+<a name="l00404"></a>00404 
+<a name="l00405"></a>00405     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html#a304c5f4263ada36f51506151ec05c718">getParameter</a>(quantity&lt;celsius::temperature&gt;&amp; parameter) <span class="keyword">const</span>;
+<a name="l00406"></a>00406 
+<a name="l00407"></a>00407     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_actual_motor_driver_temperature.html#aafb2021b6f3e74a710a59a0a74ccc358">toString</a>(std::string&amp; value);
+<a name="l00408"></a>00408 
+<a name="l00409"></a>00409 
+<a name="l00410"></a>00410   <span class="keyword">private</span>:
+<a name="l00411"></a>00411     <span class="keywordtype">void</span> getYouBotMailboxMsg(<a class="code" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves.">YouBotSlaveMailboxMsg</a>&amp; message, <a class="code" href="_protocol_definitions_8hpp.html#abe5438adcc18c093abde88dcc1a75510">TMCLCommandNumber</a> msgType, <span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_joint_storage.html" title="Stores YouBotJoint informations which are needed in the driver.">YouBotJointStorage</a>&amp; storage) <span class="keyword">const</span>;
+<a name="l00412"></a>00412 
+<a name="l00413"></a>00413     <span class="keywordtype">void</span> setYouBotMailboxMsg(<span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves.">YouBotSlaveMailboxMsg</a>&amp; message, <span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_joint_storage.html" title="Stores YouBotJoint informations which are needed in the driver.">YouBotJointStorage</a>&amp; storage);
+<a name="l00414"></a>00414 
+<a name="l00415"></a>00415     std::string getName()<span class="keyword"> const </span>{<span class="keywordflow">return</span> this-&gt;name;};<a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00416"></a>00416 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00417"></a>00417 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0">    ::ParameterType</a> getType()<span class="keyword"> const </span>{<span class="keywordflow">return</span> this-&gt;parameterType;};
+<a name="l00418"></a>00418 
+<a name="l00419"></a>00419     quantity&lt;celsius::temperature&gt; value;
+<a name="l00420"></a>00420 
+<a name="l00421"></a>00421     std::string name;<a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00422"></a>00422 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00423"></a>00423 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0">    ::ParameterType</a> parameterType;
+<a name="l00424"></a>00424 
+<a name="l00425"></a>00425 };<span class="comment"></span>
+<a name="l00426"></a>00426 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00427"></a>00427 <span class="comment">/// Get actual supply current of the module.</span>
+<a name="l00428"></a>00428 <span class="comment">///////////////////////////////////////////////////////////////////////////////</span>
+<a name="l00429"></a><a class="code" href="classyoubot_1_1_actual_module_supply_current.html">00429</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="classyoubot_1_1_actual_module_supply_current.html" title="Get actual supply current of the module.">ActualModuleSupplyCurrent</a> : <span class="keyword">public</span> <a class="code" href="classyoubot_1_1_you_bot_joint_parameter_read_only.html" title="abstract youBot joint parameter which can be read only">YouBotJointParameterReadOnly</a> {
+<a name="l00430"></a><a class="code" href="classyoubot_1_1_actual_module_supply_current.html#a5f426de16c6d8325734de356de32c917">00430</a> <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classyoubot_1_1_you_bot_joint.html" title="youBot joint for the base and the manipulator.">YouBotJoint</a>;
+<a name="l00431"></a>00431   <span class="keyword">public</span>:
+<a name="l00432"></a>00432     <a class="code" href="classyoubot_1_1_actual_module_supply_current.html#ab460bc84fbfe6c9c4bb876ee8edb3cd0">ActualModuleSupplyCurrent</a>();
+<a name="l00433"></a>00433 
+<a name="l00434"></a>00434     <span class="keyword">virtual</span> <a class="code" href="classyoubot_1_1_actual_module_supply_current.html#a1093932cb4c8aedbd22e90bcea7f01f1">~ActualModuleSupplyCurrent</a>();
+<a name="l00435"></a>00435 
+<a name="l00436"></a>00436     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_actual_module_supply_current.html#aa00c4f8d9e8683965d63f8d358f2e018">getParameter</a>(quantity&lt;si::current&gt;&amp; parameter) <span class="keyword">const</span>;
+<a name="l00437"></a>00437 
+<a name="l00438"></a>00438     <span class="keywordtype">void</span> <a class="code" href="classyoubot_1_1_actual_module_supply_current.html#aafb2021b6f3e74a710a59a0a74ccc358">toString</a>(std::string&amp; value);
+<a name="l00439"></a>00439 
+<a name="l00440"></a>00440 
+<a name="l00441"></a>00441   <span class="keyword">private</span>:
+<a name="l00442"></a>00442     <span class="keywordtype">void</span> getYouBotMailboxMsg(<a class="code" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves.">YouBotSlaveMailboxMsg</a>&amp; message, <a class="code" href="_protocol_definitions_8hpp.html#abe5438adcc18c093abde88dcc1a75510">TMCLCommandNumber</a> msgType, <span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_joint_storage.html" title="Stores YouBotJoint informations which are needed in the driver.">YouBotJointStorage</a>&amp; storage) <span class="keyword">const</span>;
+<a name="l00443"></a>00443 
+<a name="l00444"></a>00444     <span class="keywordtype">void</span> setYouBotMailboxMsg(<span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves.">YouBotSlaveMailboxMsg</a>&amp; message, <span class="keyword">const</span> <a class="code" href="classyoubot_1_1_you_bot_joint_storage.html" title="Stores YouBotJoint informations which are needed in the driver.">YouBotJointStorage</a>&amp; storage);
+<a name="l00445"></a>00445 
+<a name="l00446"></a>00446     std::string getName()<span class="keyword"> const </span>{<span class="keywordflow">return</span> this-&gt;name;};<a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00447"></a>00447 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00448"></a>00448 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0">    ::ParameterType</a> getType()<span class="keyword"> const </span>{<span class="keywordflow">return</span> this-&gt;parameterType;};
+<a name="l00449"></a>00449 
+<a name="l00450"></a>00450     quantity&lt;si::current&gt; value;
+<a name="l00451"></a>00451 
+<a name="l00452"></a>00452     std::string name;<a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00453"></a>00453 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0"></a>
+<a name="l00454"></a>00454 <a class="code" href="_protocol_definitions_8hpp.html#a4d63980e4031b0fc366e623868b27ed0">    ::ParameterType</a> parameterType;
+<a name="l00455"></a>00455 
+<a name="l00456"></a>00456 };
+<a name="l00457"></a>00457 
+<a name="l00458"></a>00458 } <span class="comment">// namespace youbot</span>
+<a name="l00459"></a>00459 <span class="preprocessor">#endif</span>
 </pre></div></div>
 <hr class="footer"/><address style="text-align: right;"><small>Generated by&nbsp;
 <a href="http://www.doxygen.org/index.html">

@@ -40,7 +40,6 @@
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
-      <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
@@ -76,6 +75,9 @@
 <li>actualPosition
 : <a class="el" href="structyoubot_1_1_slave_message_input.html#acf08e6420b0bb3f814c0d1b3655434cd">SlaveMessageInput</a>
 </li>
+<li>actualPWM
+: <a class="el" href="structyoubot_1_1_slave_message_input.html#a601f3ebd9899aeffa8c6166032512b12">SlaveMessageInput</a>
+</li>
 <li>actualVelocity
 : <a class="el" href="structyoubot_1_1_slave_message_input.html#a035aad0e5f882ba9eaf8ee2c1b9e01c9">SlaveMessageInput</a>
 </li>
@@ -84,8 +86,8 @@
 , <a class="el" href="classyoubot_1_1_joint_angle_setpoint.html#a04fcdd16ee9354653ef72ef22a52678c">JointAngleSetpoint</a>
 </li>
 <li>angularVelocity
-: <a class="el" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">JointSensedVelocity</a>
-, <a class="el" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">JointVelocitySetpoint</a>
+: <a class="el" href="classyoubot_1_1_joint_velocity_setpoint.html#a92bb2f1df8de29685f80e488b24792c0">JointVelocitySetpoint</a>
+, <a class="el" href="classyoubot_1_1_joint_sensed_velocity.html#a1c682edc27f2f80f174781ef3748d376">JointSensedVelocity</a>
 </li>
 <li>areLimitsActive
 : <a class="el" href="classyoubot_1_1_you_bot_joint_storage.html#a9856b9b0462a7279795164f077005875">YouBotJointStorage</a>
@@ -116,13 +118,6 @@
 </ul>
 
 
-<h3><a class="anchor" id="index_d">- d -</a></h3><ul>
-<li>driverTemperature
-: <a class="el" href="structyoubot_1_1_slave_message_input.html#a23a6bcfeb3ff14bfb5fb55b5d45921b7">SlaveMessageInput</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_e">- e -</a></h3><ul>
 <li>encoderTicks
 : <a class="el" href="classyoubot_1_1_joint_sensed_encoder_ticks.html#ac07011b7b49a920db4fe889edb8b368f">JointSensedEncoderTicks</a>
@@ -132,7 +127,7 @@
 : <a class="el" href="classyoubot_1_1_you_bot_joint_storage.html#aa7281cbdb97eb444c0c090ee99d24a0f">YouBotJointStorage</a>
 </li>
 <li>errorFlags
-: <a class="el" href="structyoubot_1_1_slave_message_input.html#a53432132643767242a62b53431af28f4">SlaveMessageInput</a>
+: <a class="el" href="structyoubot_1_1_slave_message_input.html#a946883f42801644c2a9465c7e0b08203">SlaveMessageInput</a>
 </li>
 </ul>
 
@@ -237,6 +232,7 @@
 </li>
 <li>pwm
 : <a class="el" href="classyoubot_1_1_joint_p_w_m_setpoint.html#a490a9e9e2b50ef1774453ae170fc60a1">JointPWMSetpoint</a>
+, <a class="el" href="classyoubot_1_1_joint_sensed_p_w_m.html#ab8c4aea1af31992e2aed3cf6b5c81609">JointSensedPWM</a>
 </li>
 </ul>
 
@@ -274,15 +270,15 @@
 
 
 <h3><a class="anchor" id="index_t">- t -</a></h3><ul>
-<li>temperature
-: <a class="el" href="classyoubot_1_1_joint_sensed_temperature.html#a3a8c4914ec180c977efaa98026bdb6a6">JointSensedTemperature</a>
-</li>
 <li>timeSlice
 : <a class="el" href="structyoubot_1_1_current_with_time_slice.html#ac47f6ec370a4b9d7797aad06ff9fb4f6">CurrentWithTimeSlice</a>
 </li>
 <li>torque
-: <a class="el" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">JointTorqueSetpoint</a>
-, <a class="el" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">JointSensedTorque</a>
+: <a class="el" href="classyoubot_1_1_joint_sensed_torque.html#aeab9b928859187f005beca2b113cfb3a">JointSensedTorque</a>
+, <a class="el" href="classyoubot_1_1_joint_torque_setpoint.html#aeab9b928859187f005beca2b113cfb3a">JointTorqueSetpoint</a>
+</li>
+<li>torqueConstant
+: <a class="el" href="classyoubot_1_1_you_bot_joint_storage.html#a3f0093fc51e1459de3a71de9ac450fbf">YouBotJointStorage</a>
 </li>
 <li>typeNumber
 : <a class="el" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_output_buffer.html#a9912dcafd476c4386c085f06a3423ec2">mailboxOutputBuffer</a>

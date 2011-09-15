@@ -24,7 +24,7 @@
       <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_0459952b077697e33b50f7da69366589.html">youbot</a>
+  <div class="navpath"><a class="el" href="dir_b20df63dec99a6d1c83aff53bd0137ad.html">youbot</a>
   </div>
 </div>
 <div class="contents">
@@ -102,8 +102,8 @@
 <a name="l00072"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#acf08e6420b0bb3f814c0d1b3655434cd">00072</a>     int32 <a class="code" href="structyoubot_1_1_slave_message_input.html#acf08e6420b0bb3f814c0d1b3655434cd">actualPosition</a>;   <span class="comment">// encoder ticks</span>
 <a name="l00073"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#ae9e593e1723fef8c22218ba3da26955c">00073</a>     int32 <a class="code" href="structyoubot_1_1_slave_message_input.html#ae9e593e1723fef8c22218ba3da26955c">actualCurrent</a>;    <span class="comment">// mA</span>
 <a name="l00074"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#a035aad0e5f882ba9eaf8ee2c1b9e01c9">00074</a>     int32 <a class="code" href="structyoubot_1_1_slave_message_input.html#a035aad0e5f882ba9eaf8ee2c1b9e01c9">actualVelocity</a>;   <span class="comment">// rpm motor axis</span>
-<a name="l00075"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#a53432132643767242a62b53431af28f4">00075</a>     uint16 <a class="code" href="structyoubot_1_1_slave_message_input.html#a53432132643767242a62b53431af28f4">errorFlags</a>;
-<a name="l00076"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#a23a6bcfeb3ff14bfb5fb55b5d45921b7">00076</a>     uint16 <a class="code" href="structyoubot_1_1_slave_message_input.html#a23a6bcfeb3ff14bfb5fb55b5d45921b7">driverTemperature</a>;
+<a name="l00075"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#a946883f42801644c2a9465c7e0b08203">00075</a>     uint32 <a class="code" href="structyoubot_1_1_slave_message_input.html#a946883f42801644c2a9465c7e0b08203">errorFlags</a>;
+<a name="l00076"></a><a class="code" href="structyoubot_1_1_slave_message_input.html#a601f3ebd9899aeffa8c6166032512b12">00076</a>     int32 <a class="code" href="structyoubot_1_1_slave_message_input.html#a601f3ebd9899aeffa8c6166032512b12">actualPWM</a>;
 <a name="l00077"></a>00077   } __attribute__((__packed__));
 <a name="l00078"></a>00078 <span class="comment"></span>
 <a name="l00079"></a>00079 <span class="comment">  ///////////////////////////////////////////////////////////////////////////////</span>
@@ -125,8 +125,8 @@
 <a name="l00095"></a>00095       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#ae9e593e1723fef8c22218ba3da26955c">actualCurrent</a> = 0;
 <a name="l00096"></a>00096       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#acf08e6420b0bb3f814c0d1b3655434cd">actualPosition</a> = 0;
 <a name="l00097"></a>00097       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#a035aad0e5f882ba9eaf8ee2c1b9e01c9">actualVelocity</a> = 0;
-<a name="l00098"></a>00098       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#a23a6bcfeb3ff14bfb5fb55b5d45921b7">driverTemperature</a> = 0;
-<a name="l00099"></a>00099       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#a53432132643767242a62b53431af28f4">errorFlags</a> = 0;
+<a name="l00098"></a>00098       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#a601f3ebd9899aeffa8c6166032512b12">actualPWM</a> = 0;
+<a name="l00099"></a>00099       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a66dcf6b0edf8b481feda9a9dc402efc9">stctInput</a>.<a class="code" href="structyoubot_1_1_slave_message_input.html#a946883f42801644c2a9465c7e0b08203">errorFlags</a> = 0;
 <a name="l00100"></a>00100       <a class="code" href="classyoubot_1_1_you_bot_slave_msg.html#a93b5b3410b7a90a42fbf31069a09b345">jointNumber</a> = 0;
 <a name="l00101"></a>00101     }
 <a name="l00102"></a>00102 

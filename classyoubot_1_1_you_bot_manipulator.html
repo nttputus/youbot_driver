@@ -63,10 +63,14 @@ Collaboration diagram for YouBotManipulator:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands velocities to all manipulator joints all velocities will be set at the same time  <a href="#a231a007161db9d60f3bae50962c1fe50"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#af12e8391878e68979c1276c89e5025a6">getJointData</a> (std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_velocity.html">JointSensedVelocity</a> &gt; &amp;data)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the velocities of all manipulator joints which have been calculated from the actual encoder values These values are all read at the same time from the different joints  <a href="#af12e8391878e68979c1276c89e5025a6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#aaef80216d266b713e1f829839476fc6e">getJointData</a> (std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_temperature.html">JointSensedTemperature</a> &gt; &amp;data)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets temperatures of all manipulator motors which have been measured by a thermometer These values are all read at the same time from the different joints  <a href="#aaef80216d266b713e1f829839476fc6e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#a94e23ba84d84fd865f38e9e2eaafbba9">setJointData</a> (const std::vector&lt; <a class="el" href="classyoubot_1_1_joint_current_setpoint.html">JointCurrentSetpoint</a> &gt; &amp;<a class="el" href="classyoubot_1_1_joint_data.html">JointData</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands current to all manipulator joints all current values will be set at the same time  <a href="#a94e23ba84d84fd865f38e9e2eaafbba9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#acfae3141fafbe0e7dd4c7a0fe994297e">getJointData</a> (std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_current.html">JointSensedCurrent</a> &gt; &amp;data)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the motor currents of all manipulator joints which have been measured by a hal sensor These values are all read at the same time from the different joints  <a href="#acfae3141fafbe0e7dd4c7a0fe994297e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#aead98c475b8bd2f3e6b8c9fce208f5af">setJointData</a> (const std::vector&lt; <a class="el" href="classyoubot_1_1_joint_torque_setpoint.html">JointTorqueSetpoint</a> &gt; &amp;<a class="el" href="classyoubot_1_1_joint_data.html">JointData</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">commands torque to all manipulator joints all torque values will be set at the same time  <a href="#aead98c475b8bd2f3e6b8c9fce208f5af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_you_bot_manipulator.html#a38b673767e67bdf914a8201442faee5f">getJointData</a> (std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_torque.html">JointSensedTorque</a> &gt; &amp;data)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">gets the joint torque of all manipulator joints which have been calculated from the current These values are all read at the same time from the different joints  <a href="#a38b673767e67bdf914a8201442faee5f"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>It groups the manipulator joints and the gripper together. </p>
@@ -215,6 +219,32 @@ Collaboration diagram for YouBotManipulator:</div>
 
 </div>
 </div>
+<a class="anchor" id="a38b673767e67bdf914a8201442faee5f"></a><!-- doxytag: member="youbot::YouBotManipulator::getJointData" ref="a38b673767e67bdf914a8201442faee5f" args="(std::vector&lt; JointSensedTorque &gt; &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getJointData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_torque.html">JointSensedTorque</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>gets the joint torque of all manipulator joints which have been calculated from the current These values are all read at the same time from the different joints </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the actual joint torque by reference </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="acfae3141fafbe0e7dd4c7a0fe994297e"></a><!-- doxytag: member="youbot::YouBotManipulator::getJointData" ref="acfae3141fafbe0e7dd4c7a0fe994297e" args="(std::vector&lt; JointSensedCurrent &gt; &amp;data)" -->
 <div class="memitem">
 <div class="memproto">
@@ -235,32 +265,6 @@ Collaboration diagram for YouBotManipulator:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the actual motor currents by reference </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aaef80216d266b713e1f829839476fc6e"></a><!-- doxytag: member="youbot::YouBotManipulator::getJointData" ref="aaef80216d266b713e1f829839476fc6e" args="(std::vector&lt; JointSensedTemperature &gt; &amp;data)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void getJointData </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classyoubot_1_1_joint_sensed_temperature.html">JointSensedTemperature</a> &gt; &amp;&nbsp;</td>
-          <td class="paramname"> <em>data</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>gets temperatures of all manipulator motors which have been measured by a thermometer These values are all read at the same time from the different joints </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the actual temperatures by reference </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,6 +317,58 @@ Collaboration diagram for YouBotManipulator:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>returns the angles by reference </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aead98c475b8bd2f3e6b8c9fce208f5af"></a><!-- doxytag: member="youbot::YouBotManipulator::setJointData" ref="aead98c475b8bd2f3e6b8c9fce208f5af" args="(const std::vector&lt; JointTorqueSetpoint &gt; &amp;JointData)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setJointData </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classyoubot_1_1_joint_torque_setpoint.html">JointTorqueSetpoint</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>JointData</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>commands torque to all manipulator joints all torque values will be set at the same time </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a></em>&nbsp;</td><td>the to command torque </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a94e23ba84d84fd865f38e9e2eaafbba9"></a><!-- doxytag: member="youbot::YouBotManipulator::setJointData" ref="a94e23ba84d84fd865f38e9e2eaafbba9" args="(const std::vector&lt; JointCurrentSetpoint &gt; &amp;JointData)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setJointData </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classyoubot_1_1_joint_current_setpoint.html">JointCurrentSetpoint</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>JointData</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>commands current to all manipulator joints all current values will be set at the same time </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classyoubot_1_1_joint_data.html" title="abstract data class for joints">JointData</a></em>&nbsp;</td><td>the to command current </td></tr>
   </table>
   </dd>
 </dl>

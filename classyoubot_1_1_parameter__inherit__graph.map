@@ -43,8 +43,8 @@
 <area shape="rect" href="$classyoubot_1_1_stop_on_stall.html" title="Motor stop in case of stall." alt="" coords="613,2032,704,2061"/>
 <area shape="rect" href="$classyoubot_1_1_vsense.html" title="sense resistor voltage based current scaling 0: Full scale sense resistor voltage..." alt="" coords="627,2085,691,2115"/>
 <area shape="rect" href="$classyoubot_1_1_you_bot_joint_parameter_read_only.html" title="abstract youBot joint parameter which can be read only" alt="" coords="304,2192,512,2221"/>
-<area shape="rect" href="$classyoubot_1_1_actual_motor_voltage.html" title="Actual supply voltage." alt="" coords="592,2139,725,2168"/>
-<area shape="rect" href="$classyoubot_1_1_actual_p_w_m_duty_cycle.html" title="Actual PWM duty cycle (0%." alt="" coords="584,2192,733,2221"/>
-<area shape="rect" href="$classyoubot_1_1_error_and_status.html" title="Error and Status flags of the joint." alt="" coords="604,2245,713,2275"/>
-<area shape="rect" href="$classyoubot_1_1_i2t_sum.html" title="Actual sum of the I2t monitor." alt="" coords="627,2299,691,2328"/>
+<area shape="rect" href="$classyoubot_1_1_actual_module_supply_current.html" title="Get actual supply current of the module." alt="" coords="568,2139,749,2168"/>
+<area shape="rect" href="$classyoubot_1_1_actual_motor_driver_temperature.html" title="Actual temperature of the motor driver." alt="" coords="560,2192,757,2221"/>
+<area shape="rect" href="$classyoubot_1_1_actual_motor_voltage.html" title="Actual supply voltage." alt="" coords="592,2245,725,2275"/>
+<area shape="rect" href="$classyoubot_1_1_actual_p_w_m_duty_cycle.html" title="Actual PWM duty cycle (0%." alt="" coords="584,2299,733,2328"/>
 </map>

@@ -39,7 +39,7 @@ Collaboration diagram for EthercatMaster:</div>
 <div class="dynsection">
 <div class="center"><img src="classyoubot_1_1_ethercat_master__coll__graph.png" border="0" usemap="#_ethercat_master_coll__map" alt="Collaboration graph"/></div>
 <map name="_ethercat_master_coll__map" id="_ethercat_master_coll__map">
-<area shape="rect" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="481,488,647,517"/><area shape="rect" title="STL class." alt="" coords="241,225,295,255"/><area shape="rect" href="classyoubot_1_1_config_file.html" title="ConfigFile" alt="" coords="1792,269,1872,299"/><area shape="rect" href="classyoubot_1_1_sort_tree_vector.html" title="SortTreeVector" alt="" coords="852,237,959,267"/><area shape="rect" title="STL class." alt="" coords="7,225,145,255"/><area shape="rect" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_output_buffer.html" title="Output part from the EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="199,495,337,524"/><area shape="rect" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_input_buffer.html" title="Input part from the EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="203,563,333,592"/><area shape="rect" href="classyoubot_1_1_motor_protection.html" title="Implements the i2t motor protection." alt="" coords="1337,551,1449,580"/><area shape="rect" href="structyoubot_1_1_current_with_time_slice.html" title="struct to represent current over time" alt="" coords="491,551,637,580"/><area shape="rect" href="structyoubot_1_1_slave_message_input.html" title="Input part from the EtherCat message of the youBot EtherCat slaves." alt="" coords="837,641,973,671"/><area shape="rect" href="classyoubot_1_1_you_bot_slave_msg.html" title="EtherCat message of the youBot EtherCat slaves." alt="" coords="1333,684,1453,713"/><area shape="rect" href="structyoubot_1_1_slave_message_output.html" title="Output part from the EtherCat message of the youBot EtherCat slaves." alt="" coords="832,717,979,747"/></map>
+<area shape="rect" href="classyoubot_1_1_you_bot_slave_mailbox_msg.html" title="EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="481,488,647,517"/><area shape="rect" title="STL class." alt="" coords="241,223,295,252"/><area shape="rect" href="classyoubot_1_1_config_file.html" title="ConfigFile" alt="" coords="1792,269,1872,299"/><area shape="rect" href="classyoubot_1_1_sort_tree_vector.html" title="SortTreeVector" alt="" coords="852,237,959,267"/><area shape="rect" title="STL class." alt="" coords="7,223,145,252"/><area shape="rect" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_output_buffer.html" title="Output part from the EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="199,495,337,524"/><area shape="rect" href="structyoubot_1_1_you_bot_slave_mailbox_msg_1_1mailbox_input_buffer.html" title="Input part from the EtherCat mailbox message of the youBot EtherCat slaves." alt="" coords="203,563,333,592"/><area shape="rect" href="classyoubot_1_1_motor_protection.html" title="Implements the i2t motor protection." alt="" coords="1337,551,1449,580"/><area shape="rect" href="structyoubot_1_1_current_with_time_slice.html" title="struct to represent current over time" alt="" coords="491,551,637,580"/><area shape="rect" href="structyoubot_1_1_slave_message_input.html" title="Input part from the EtherCat message of the youBot EtherCat slaves." alt="" coords="837,636,973,665"/><area shape="rect" href="classyoubot_1_1_you_bot_slave_msg.html" title="EtherCat message of the youBot EtherCat slaves." alt="" coords="1333,711,1453,740"/><area shape="rect" href="structyoubot_1_1_slave_message_output.html" title="Output part from the EtherCat message of the youBot EtherCat slaves." alt="" coords="832,740,979,769"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classyoubot_1_1_ethercat_master-members.html">List of all members.</a></p>
@@ -51,18 +51,48 @@ Collaboration diagram for EthercatMaster:</div>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a363ae9fe2cfc98972edfff3fc06f1585">AutomaticReceiveOn</a> (const bool enableAutomaticReceive)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a095de44be6c225482eedff07b1bdf3fb">getEthercatDiagnosticInformation</a> (std::vector&lt; ec_slavet &gt; &amp;ethercatSlaveInfos)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">provides all ethercat slave informations from the SOEM driver  <a href="#a095de44be6c225482eedff07b1bdf3fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a5b3c42c5943a8a9d5481a0b159114441">getNumberOfSlaves</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the quantity of ethercat slave which have an input/output buffer  <a href="#a5b3c42c5943a8a9d5481a0b159114441"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a45f4eca9426e4fb543985a3908b30958">AutomaticSendOn</a> (const bool enableAutomaticSend)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a363ae9fe2cfc98972edfff3fc06f1585">AutomaticReceiveOn</a> (const bool enableAutomaticReceive)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a095de44be6c225482eedff07b1bdf3fb">getEthercatDiagnosticInformation</a> (std::vector&lt; ec_slavet &gt; &amp;ethercatSlaveInfos)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">provides all ethercat slave informations from the SOEM driver  <a href="#a095de44be6c225482eedff07b1bdf3fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#aeb1bd2b117e951a7fc22a52d0a784271">sendAndReceiveProcessData</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sends and receives ethercat messages to and from the motor controllers  <a href="#aeb1bd2b117e951a7fc22a52d0a784271"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classyoubot_1_1_ethercat_master.html">EthercatMaster</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a070d0e26ee33143f5a66c94481959886">getInstance</a> (const std::string configFile=&quot;youbot-ethercat.cfg&quot;, const std::string configFilePath=&quot;../config/&quot;)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">creates a instance of the singleton <a class="el" href="classyoubot_1_1_ethercat_master.html" title="The Ethercat Master is managing the whole ethercat communication It have to be a...">EthercatMaster</a> if there is none and returns a reference to it  <a href="#a070d0e26ee33143f5a66c94481959886"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a3a80b6032f86a56bec74609034b3246f">destroy</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destroy the singleton instance by calling the destructor  <a href="#a3a80b6032f86a56bec74609034b3246f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classyoubot_1_1_ethercat_master.html">EthercatMaster</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#ab3a6a3f1344855de082115265c60f715">getInstance</a> (const std::string configFile=&quot;youbot-ethercat.cfg&quot;, const std::string configFilePath=&quot;../config/&quot;)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">creates a instance of the singleton <a class="el" href="classyoubot_1_1_ethercat_master.html" title="The Ethercat Master is managing the whole ethercat communication It have to be a...">EthercatMaster</a> if there is none and returns a reference to it  <a href="#ab3a6a3f1344855de082115265c60f715"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a112a068c3a6f373ec6c12fdf0b48987b">destroy</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destroy the singleton instance by calling the destructor  <a href="#a112a068c3a6f373ec6c12fdf0b48987b"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Friends</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a5f426de16c6d8325734de356de32c917">YouBotJoint</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#ad4fe45aae6b9a004d5ce9c2074608fef">YouBotGripper</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a755dfe7f42fec788adf67e4e3fbb669e">YouBotJoint</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyoubot_1_1_ethercat_master.html#a5833773ca7ec7f0d04691ac59c61a669">YouBotGripper</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>The Ethercat Master is managing the whole ethercat communication It have to be a singleton in the system. </p>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a363ae9fe2cfc98972edfff3fc06f1585"></a><!-- doxytag: member="youbot::EthercatMaster::AutomaticReceiveOn" ref="a363ae9fe2cfc98972edfff3fc06f1585" args="(const bool enableAutomaticReceive)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AutomaticReceiveOn </td>
+          <td>(</td>
+          <td class="paramtype">const bool&nbsp;</td>
+          <td class="paramname"> <em>enableAutomaticReceive</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a363ae9fe2cfc98972edfff3fc06f1585"></a><!-- doxytag: member="youbot::EthercatMaster::AutomaticReceiveOn" ref="a363ae9fe2cfc98972edfff3fc06f1585" args="(const bool enableAutomaticReceive)" -->
 <div class="memitem">
 <div class="memproto">
@@ -96,6 +126,43 @@ Collaboration diagram for EthercatMaster:</div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45f4eca9426e4fb543985a3908b30958"></a><!-- doxytag: member="youbot::EthercatMaster::AutomaticSendOn" ref="a45f4eca9426e4fb543985a3908b30958" args="(const bool enableAutomaticSend)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AutomaticSendOn </td>
+          <td>(</td>
+          <td class="paramtype">const bool&nbsp;</td>
+          <td class="paramname"> <em>enableAutomaticSend</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a112a068c3a6f373ec6c12fdf0b48987b"></a><!-- doxytag: member="youbot::EthercatMaster::destroy" ref="a112a068c3a6f373ec6c12fdf0b48987b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void destroy </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>destroy the singleton instance by calling the destructor </p>
 
 </div>
 </div>
@@ -138,6 +205,68 @@ Collaboration diagram for EthercatMaster:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>ethercatSlaveInfos</em>&nbsp;</td><td>ethercat slave informations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a095de44be6c225482eedff07b1bdf3fb"></a><!-- doxytag: member="youbot::EthercatMaster::getEthercatDiagnosticInformation" ref="a095de44be6c225482eedff07b1bdf3fb" args="(std::vector&lt; ec_slavet &gt; &amp;ethercatSlaveInfos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getEthercatDiagnosticInformation </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; ec_slavet &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>ethercatSlaveInfos</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>provides all ethercat slave informations from the SOEM driver </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ethercatSlaveInfos</em>&nbsp;</td><td>ethercat slave informations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3a6a3f1344855de082115265c60f715"></a><!-- doxytag: member="youbot::EthercatMaster::getInstance" ref="ab3a6a3f1344855de082115265c60f715" args="(const std::string configFile=&quot;youbot&#45;ethercat.cfg&quot;, const std::string configFilePath=&quot;../config/&quot;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classyoubot_1_1_ethercat_master.html">EthercatMaster</a>&amp; getInstance </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&nbsp;</td>
+          <td class="paramname"> <em>configFile</em> = <code>&quot;youbot-ethercat.cfg&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&nbsp;</td>
+          <td class="paramname"> <em>configFilePath</em> = <code>&quot;../config/&quot;</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>creates a instance of the singleton <a class="el" href="classyoubot_1_1_ethercat_master.html" title="The Ethercat Master is managing the whole ethercat communication It have to be a...">EthercatMaster</a> if there is none and returns a reference to it </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>configFile</em>&nbsp;</td><td>configuration file name incl. the extension </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>configFilePath</em>&nbsp;</td><td>the path where the configuration is located with a / at the end </td></tr>
   </table>
   </dd>
 </dl>
@@ -199,13 +328,51 @@ Collaboration diagram for EthercatMaster:</div>
 
 </div>
 </div>
-<hr/><h2>Friends And Related Function Documentation</h2>
-<a class="anchor" id="ad4fe45aae6b9a004d5ce9c2074608fef"></a><!-- doxytag: member="youbot::EthercatMaster::YouBotGripper" ref="ad4fe45aae6b9a004d5ce9c2074608fef" args="" -->
+<a class="anchor" id="a5b3c42c5943a8a9d5481a0b159114441"></a><!-- doxytag: member="youbot::EthercatMaster::getNumberOfSlaves" ref="a5b3c42c5943a8a9d5481a0b159114441" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classyoubot_1_1_you_bot_gripper.html">YouBotGripper</a><code> [friend]</code></td>
+          <td class="memname">unsigned int getNumberOfSlaves </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the quantity of ethercat slave which have an input/output buffer </p>
+
+</div>
+</div>
+<a class="anchor" id="aeb1bd2b117e951a7fc22a52d0a784271"></a><!-- doxytag: member="youbot::EthercatMaster::sendAndReceiveProcessData" ref="aeb1bd2b117e951a7fc22a52d0a784271" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendAndReceiveProcessData </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sends and receives ethercat messages to and from the motor controllers </p>
+
+</div>
+</div>
+<hr/><h2>Friends And Related Function Documentation</h2>
+<a class="anchor" id="a5833773ca7ec7f0d04691ac59c61a669"></a><!-- doxytag: member="youbot::EthercatMaster::YouBotGripper" ref="a5833773ca7ec7f0d04691ac59c61a669" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classyoubot_1_1_you_bot_gripper.html">YouBotGripper</a><code> [friend]</code></td>
         </tr>
       </table>
 </div>
@@ -213,12 +380,12 @@ Collaboration diagram for EthercatMaster:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5f426de16c6d8325734de356de32c917"></a><!-- doxytag: member="youbot::EthercatMaster::YouBotJoint" ref="a5f426de16c6d8325734de356de32c917" args="" -->
+<a class="anchor" id="a755dfe7f42fec788adf67e4e3fbb669e"></a><!-- doxytag: member="youbot::EthercatMaster::YouBotJoint" ref="a755dfe7f42fec788adf67e4e3fbb669e" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classyoubot_1_1_you_bot_joint.html">YouBotJoint</a><code> [friend]</code></td>
+          <td class="memname"><a class="el" href="classyoubot_1_1_you_bot_joint.html">YouBotJoint</a><code> [friend]</code></td>
         </tr>
       </table>
 </div>
@@ -228,7 +395,9 @@ Collaboration diagram for EthercatMaster:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_ethercat_master_8hpp_source.html">EthercatMaster.hpp</a></li>
+<li><a class="el" href="_ethercat_master_without_thread_8hpp_source.html">EthercatMasterWithoutThread.hpp</a></li>
 <li><a class="el" href="_ethercat_master_8cpp.html">EthercatMaster.cpp</a></li>
+<li><a class="el" href="_ethercat_master_without_thread_8cpp.html">EthercatMasterWithoutThread.cpp</a></li>
 </ul>
 </div>
 <hr class="footer"/><address style="text-align: right;"><small>Generated by&nbsp;

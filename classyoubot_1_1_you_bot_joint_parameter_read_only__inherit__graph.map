@@ -1,50 +1,50 @@
 <map id="G" name="G">
-<area shape="rect" href="$classyoubot_1_1_actual_motor_voltage.html" title="Actual supply voltage." alt="" coords="556,459,689,488"/>
-<area shape="rect" href="$classyoubot_1_1_actual_p_w_m_duty_cycle.html" title="Actual PWM duty cycle (0%." alt="" coords="548,512,697,541"/>
-<area shape="rect" href="$classyoubot_1_1_error_and_status.html" title="Error and Status flags of the joint." alt="" coords="568,565,677,595"/>
-<area shape="rect" href="$classyoubot_1_1_i2t_sum.html" title="Actual sum of the I2t monitor." alt="" coords="591,619,655,648"/>
-<area shape="rect" href="$classyoubot_1_1_position_error.html" title="Actual error of PID position regulator." alt="" coords="575,672,671,701"/>
-<area shape="rect" href="$classyoubot_1_1_position_error_sum.html" title="Sums of errors of PID position regulator." alt="" coords="561,725,684,755"/>
-<area shape="rect" href="$classyoubot_1_1_ramp_generator_speed.html" title="The actual speed of the velocity ramp used for positioning and velocity mode." alt="" coords="548,779,697,808"/>
-<area shape="rect" href="$classyoubot_1_1_velocity_error.html" title="Actual error of PID velocity regulator." alt="" coords="575,832,671,861"/>
-<area shape="rect" href="$classyoubot_1_1_velocity_error_sum.html" title="Sums of Errors of PID velocity regulator." alt="" coords="561,885,684,915"/>
-<area shape="rect" href="$classyoubot_1_1_you_bot_joint_parameter.html" title="abstract youBot joint parameter" alt="" coords="548,939,697,968"/>
-<area shape="rect" href="$classyoubot_1_1_joint_parameter.html" title="abstract joint parameter" alt="" coords="135,699,241,728"/>
-<area shape="rect" href="$classyoubot_1_1_parameter.html" title="abstract parameter" alt="" coords="5,699,85,728"/>
-<area shape="rect" href="$classyoubot_1_1_calibrate_joint.html" title="calibrates the joint" alt="" coords="861,5,960,35"/>
-<area shape="rect" href="$classyoubot_1_1_current_control_switching_threshold.html" title="Switching threshold for position control between the first and second set of parameters..." alt="" coords="803,59,1019,88"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_current_control.html" title="D&#45;Parameter of PID current regulator." alt="" coords="779,112,1043,141"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_position_control.html" title="D&#45;Parameter of PID position regulator (first position parameter set)." alt="" coords="777,165,1044,195"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_speed_control.html" title="D&#45;Parameter of PID velocity regulator." alt="" coords="781,219,1040,248"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_current_control.html" title="D&#45;Parameter of PID current regulator." alt="" coords="769,272,1052,301"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (second position parameter set)." alt="" coords="768,325,1053,355"/>
-<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_speed_control.html" title="D&#45;Parameter of PID velocity regulator (second position parameter set)." alt="" coords="772,379,1049,408"/>
-<area shape="rect" href="$classyoubot_1_1_encoder_ticks_per_round.html" title="the resolution of the encoders, it is needed for the calculations of the youBot Driver..." alt="" coords="833,432,988,461"/>
-<area shape="rect" href="$classyoubot_1_1_firmware_version.html" title="the firmware version of the joint" alt="" coords="852,485,969,515"/>
-<area shape="rect" href="$classyoubot_1_1_gear_ratio.html" title="the gear ratio which is needed for the calculations in the youBot driver" alt="" coords="871,539,951,568"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_current_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="759,592,1063,621"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_position_control.html" title="Adjust in standstill to lowest possible value at which the motor keeps its position..." alt="" coords="756,645,1065,675"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_speed_control.html" title="This PID parameter set is used at lower velocity." alt="" coords="761,699,1060,728"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_current_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="749,752,1072,781"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_position_control.html" title="Adjust in standstill to lowest possible value at which the motor keeps its position..." alt="" coords="747,805,1075,835"/>
-<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_speed_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="752,859,1069,888"/>
-<area shape="rect" href="$classyoubot_1_1_initialize_joint.html" title="Initialize Joint." alt="" coords="863,912,959,941"/>
-<area shape="rect" href="$classyoubot_1_1_inverse_movement_direction.html" title="inverse the joint movement direction" alt="" coords="823,965,999,995"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_current_control.html" title="I&#45;Parameter of PID current regulator." alt="" coords="781,1019,1040,1048"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (first position parameter set)." alt="" coords="779,1072,1043,1101"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_speed_control.html" title="I&#45;Parameter of PID velocity regulator." alt="" coords="784,1125,1037,1155"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_current_control.html" title="I&#45;Parameter of PID current regulator." alt="" coords="772,1179,1049,1208"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (second position parameter set)." alt="" coords="771,1232,1051,1261"/>
-<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_speed_control.html" title="I&#45;Parameter of PID velocity regulator (second position parameter set)." alt="" coords="775,1285,1047,1315"/>
-<area shape="rect" href="$classyoubot_1_1_joint_limits.html" title="joint position limits" alt="" coords="869,1339,952,1368"/>
-<area shape="rect" href="$classyoubot_1_1_joint_name.html" title="the name of the joint" alt="" coords="869,1392,952,1421"/>
-<area shape="rect" href="$classyoubot_1_1_maximum_positioning_velocity.html" title="The maximum velocity used for move to position command when executing a ramp to a..." alt="" coords="817,1445,1004,1475"/>
-<area shape="rect" href="$classyoubot_1_1_motor_acceleration.html" title="Acceleration parameter for velocity control and position control." alt="" coords="848,1499,973,1528"/>
-<area shape="rect" href="$classyoubot_1_1_position_control_switching_threshold.html" title="Switching threshold for position control between the first and second set of parameters..." alt="" coords="800,1552,1021,1581"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_first_parameters_current_control.html" title="P&#45;Parameter of PID current regulator." alt="" coords="779,1605,1043,1635"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_first_parameters_position_control.html" title="P&#45;Parameter of PID position regulator (first position parameter set)." alt="" coords="777,1659,1044,1688"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_first_parameters_speed_control.html" title="P&#45;Parameter of PID velocity regulator." alt="" coords="781,1712,1040,1741"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_second_parameters_current_control.html" title="P&#45;Parameter of PID current regulator." alt="" coords="769,1765,1052,1795"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_second_parameters_position_control.html" title="P&#45;Parameter of PID position regulator (second position parameter set)." alt="" coords="768,1819,1053,1848"/>
-<area shape="rect" href="$classyoubot_1_1_p_parameter_second_parameters_speed_control.html" title="P&#45;Parameter of PID velocity regulator (second position parameter set)." alt="" coords="772,1872,1049,1901"/>
+<area shape="rect" href="$classyoubot_1_1_actual_module_supply_current.html" title="Get actual supply current of the module." alt="" coords="555,299,736,328"/>
+<area shape="rect" href="$classyoubot_1_1_actual_motor_driver_temperature.html" title="Actual temperature of the motor driver." alt="" coords="547,352,744,381"/>
+<area shape="rect" href="$classyoubot_1_1_actual_motor_voltage.html" title="Actual supply voltage." alt="" coords="579,405,712,435"/>
+<area shape="rect" href="$classyoubot_1_1_actual_p_w_m_duty_cycle.html" title="Actual PWM duty cycle (0%." alt="" coords="571,459,720,488"/>
+<area shape="rect" href="$classyoubot_1_1_error_and_status.html" title="Error and Status flags of the joint." alt="" coords="591,512,700,541"/>
+<area shape="rect" href="$classyoubot_1_1_i2t_sum.html" title="Actual sum of the I2t monitor." alt="" coords="613,565,677,595"/>
+<area shape="rect" href="$classyoubot_1_1_position_error.html" title="Actual error of PID position regulator." alt="" coords="597,619,693,648"/>
+<area shape="rect" href="$classyoubot_1_1_position_error_sum.html" title="Sums of errors of PID position regulator." alt="" coords="584,672,707,701"/>
+<area shape="rect" href="$classyoubot_1_1_ramp_generator_speed.html" title="The actual speed of the velocity ramp used for positioning and velocity mode." alt="" coords="571,725,720,755"/>
+<area shape="rect" href="$classyoubot_1_1_velocity_error.html" title="Actual error of PID velocity regulator." alt="" coords="597,779,693,808"/>
+<area shape="rect" href="$classyoubot_1_1_velocity_error_sum.html" title="Sums of Errors of PID velocity regulator." alt="" coords="584,832,707,861"/>
+<area shape="rect" href="$classyoubot_1_1_you_bot_joint_parameter.html" title="abstract youBot joint parameter" alt="" coords="571,885,720,915"/>
+<area shape="rect" href="$classyoubot_1_1_joint_parameter.html" title="abstract joint parameter" alt="" coords="135,592,241,621"/>
+<area shape="rect" href="$classyoubot_1_1_parameter.html" title="abstract parameter" alt="" coords="5,592,85,621"/>
+<area shape="rect" href="$classyoubot_1_1_calibrate_joint.html" title="calibrates the joint" alt="" coords="907,5,1005,35"/>
+<area shape="rect" href="$classyoubot_1_1_current_control_switching_threshold.html" title="Switching threshold for position control between the first and second set of parameters..." alt="" coords="848,59,1064,88"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_current_control.html" title="D&#45;Parameter of PID current regulator." alt="" coords="824,112,1088,141"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_position_control.html" title="D&#45;Parameter of PID position regulator (first position parameter set)." alt="" coords="823,165,1089,195"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_first_parameters_speed_control.html" title="D&#45;Parameter of PID velocity regulator." alt="" coords="827,219,1085,248"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_current_control.html" title="D&#45;Parameter of PID current regulator." alt="" coords="815,272,1097,301"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (second position parameter set)." alt="" coords="813,325,1099,355"/>
+<area shape="rect" href="$classyoubot_1_1_d_parameter_second_parameters_speed_control.html" title="D&#45;Parameter of PID velocity regulator (second position parameter set)." alt="" coords="817,379,1095,408"/>
+<area shape="rect" href="$classyoubot_1_1_encoder_ticks_per_round.html" title="the resolution of the encoders, it is needed for the calculations of the youBot Driver..." alt="" coords="879,432,1033,461"/>
+<area shape="rect" href="$classyoubot_1_1_firmware_version.html" title="the firmware version of the joint" alt="" coords="897,485,1015,515"/>
+<area shape="rect" href="$classyoubot_1_1_gear_ratio.html" title="the gear ratio which is needed for the calculations in the youBot driver" alt="" coords="916,539,996,568"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_current_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="804,592,1108,621"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_position_control.html" title="Adjust in standstill to lowest possible value at which the motor keeps its position..." alt="" coords="801,645,1111,675"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_first_parameters_speed_control.html" title="This PID parameter set is used at lower velocity." alt="" coords="807,699,1105,728"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_current_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="795,752,1117,781"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_position_control.html" title="Adjust in standstill to lowest possible value at which the motor keeps its position..." alt="" coords="792,805,1120,835"/>
+<area shape="rect" href="$classyoubot_1_1_i_clipping_parameter_second_parameters_speed_control.html" title="I&#45;Clipping Parameter of PID current regulator." alt="" coords="797,859,1115,888"/>
+<area shape="rect" href="$classyoubot_1_1_initialize_joint.html" title="Initialize Joint." alt="" coords="908,912,1004,941"/>
+<area shape="rect" href="$classyoubot_1_1_inverse_movement_direction.html" title="inverse the joint movement direction" alt="" coords="868,965,1044,995"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_current_control.html" title="I&#45;Parameter of PID current regulator." alt="" coords="827,1019,1085,1048"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (first position parameter set)." alt="" coords="824,1072,1088,1101"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_first_parameters_speed_control.html" title="I&#45;Parameter of PID velocity regulator." alt="" coords="829,1125,1083,1155"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_current_control.html" title="I&#45;Parameter of PID current regulator." alt="" coords="817,1179,1095,1208"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_position_control.html" title="I&#45;Parameter of PID position regulator (second position parameter set)." alt="" coords="816,1232,1096,1261"/>
+<area shape="rect" href="$classyoubot_1_1_i_parameter_second_parameters_speed_control.html" title="I&#45;Parameter of PID velocity regulator (second position parameter set)." alt="" coords="820,1285,1092,1315"/>
+<area shape="rect" href="$classyoubot_1_1_joint_limits.html" title="joint position limits in encoder ticks" alt="" coords="915,1339,997,1368"/>
+<area shape="rect" href="$classyoubot_1_1_joint_limits_radian.html" title="joint position limits in radian" alt="" coords="895,1392,1017,1421"/>
+<area shape="rect" href="$classyoubot_1_1_joint_name.html" title="the name of the joint" alt="" coords="915,1445,997,1475"/>
+<area shape="rect" href="$classyoubot_1_1_maximum_positioning_velocity.html" title="The maximum velocity used for move to position command when executing a ramp to a..." alt="" coords="863,1499,1049,1528"/>
+<area shape="rect" href="$classyoubot_1_1_maximum_velocity_to_set_position.html" title="Maximum velocity at which end position can be set." alt="" coords="855,1552,1057,1581"/>
+<area shape="rect" href="$classyoubot_1_1_motor_acceleration.html" title="Acceleration parameter for velocity control and position control." alt="" coords="893,1605,1019,1635"/>
+<area shape="rect" href="$classyoubot_1_1_position_control_switching_threshold.html" title="Switching threshold for position control between the first and second set of parameters..." alt="" coords="845,1659,1067,1688"/>
+<area shape="rect" href="$classyoubot_1_1_position_target_reached_distance.html" title="Maximum distance at which the position end flag is set." alt="" coords="853,1712,1059,1741"/>
+<area shape="rect" href="$classyoubot_1_1_p_parameter_first_parameters_current_control.html" title="P&#45;Parameter of PID current regulator." alt="" coords="824,1765,1088,1795"/>
 </map>
